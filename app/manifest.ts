@@ -17,6 +17,13 @@ export default function manifest(): MetadataRoute.Manifest {
     icons: [
       { src: `${BASE_PATH}/icon.svg`, sizes: "any", type: "image/svg+xml", purpose: "any" },
       { src: `${BASE_PATH}/apple-icon.png`, sizes: "180x180", type: "image/png" },
+      { src: `${BASE_PATH}/icons/icon-192.png`, sizes: "192x192", type: "image/png", purpose: "any" },
+      { src: `${BASE_PATH}/icons/icon-512.png`, sizes: "512x512", type: "image/png", purpose: "any" },
+      { src: `${BASE_PATH}/icons/maskable-512.png`, sizes: "512x512", type: "image/png", purpose: "maskable" },
+    ],
+    shortcuts: [
+      { name: "কোড প্র্যাকটিস", url: `${BASE_PATH}/practice/` },
+      { name: "সব প্রোগ্রামিং পাঠ", url: `${BASE_PATH}/tutorials/` },
     ],
   };
 }

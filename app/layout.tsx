@@ -3,6 +3,7 @@ import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { JsonLd } from "@/components/JsonLd";
+import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister";
 import { SITE_NAME, SITE_TAGLINE, SITE_DESCRIPTION, SITE_LOCALE, SITE_URL, CONTACT_EMAIL, absoluteUrl } from "@/lib/site";
 
 const FONT_URL =
@@ -26,7 +27,6 @@ export const metadata: Metadata = {
     "বাংলা কোডিং টিউটোরিয়াল",
     "HTML CSS JavaScript বাংলা",
     "Python Bangla tutorial",
-    "HSC ICT প্রস্তুতি",
     "coding practice online",
     "Learn programming in Bengali",
   ],
@@ -80,13 +80,17 @@ const siteSchema = [
   },
 ];
 
+// Runs before first paint so a saved (or system) dark preference never flashes light.
+const THEME_INIT = `(function(){try{var t=localStorage.getItem("codeatlas-theme");if(t!=="dark"&&t!=="light"){t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.dataset.theme=t}catch(e){}})();`;
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="bn">
+    <html lang="bn" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="stylesheet" href={FONT_URL} />
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
         <JsonLd data={siteSchema} />
       </head>
       <body>
@@ -94,6 +98,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <SiteHeader />
         <main id="main-content">{children}</main>
         <SiteFooter />
+        <ServiceWorkerRegister />
       </body>
     </html>
   );

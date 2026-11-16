@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Mark } from "@/components/Mark";
+import { SearchButton } from "@/components/SearchButton";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export function SiteHeader() {
   return (
@@ -15,6 +17,7 @@ export function SiteHeader() {
           <Link href="/practice/">কোড প্র্যাকটিস</Link>
           <Link href="/about/">আমাদের সম্পর্কে</Link>
         </nav>
+        <div className="header-tools"><SearchButton /><ThemeToggle /></div>
         <Link className="header-cta" href="/practice/">কোড লেখা শুরু করো <Mark name="arrow" size={16} /></Link>
         <details className="mobile-nav">
           <summary aria-label="মেনু খুলুন"><Mark name="menu" size={22} /></summary>

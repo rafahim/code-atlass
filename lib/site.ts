@@ -5,7 +5,7 @@
 export const SITE_NAME = "Code Atlas";
 export const SITE_TAGLINE = "বাংলায় Programming শেখো";
 export const SITE_DESCRIPTION =
-  "বাংলায় Programming শেখার উন্মুক্ত জায়গা। HTML, CSS, JavaScript, Python, C, Java-সহ ৩০টি ভাষার ধাপে ধাপে পাঠ, quiz, অনুশীলন, HSC ICT প্রস্তুতি এবং ব্রাউজারেই Code Practice।";
+  "বাংলায় Programming শেখার উন্মুক্ত জায়গা। HTML, CSS, JavaScript, Python, C, Java-সহ ৩০টি ভাষার ধাপে ধাপে পাঠ, quiz, অনুশীলন এবং ব্রাউজারেই Code Practice।";
 export const SITE_LOCALE = "bn_BD";
 export const CONTACT_EMAIL = "codeatlas@rafahim.com";
 

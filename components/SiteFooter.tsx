@@ -5,7 +5,6 @@ import { DEVELOPER } from "@/lib/site";
 const learnLinks = [
   { href: "/courses/", label: "সম্পূর্ণ বাংলা কোর্স" },
   { href: "/tutorials/", label: "সব প্রোগ্রামিং পাঠ" },
-  { href: "/hsc-preparation/", label: "HSC Preparation" },
   { href: "/languages/", label: "সব Language" },
   { href: "/practice/", label: "কোড প্র্যাকটিস" },
 ];
