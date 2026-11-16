@@ -36,7 +36,7 @@ export default function HomePage() {
         <div className="hero-bottom-rule shell"><span>শেখো নিজের গতিতে</span><span>০১ / শুরু হোক শেখার যাত্রা</span></div>
       </section>
 
-      <section className="stats-strip"><div className="shell stats-grid"><div><strong>৩০+</strong><span>Programming Language</span></div><div><strong>৭</strong><span>শেখার Category</span></div><div><strong><Mark name="check" size={28} /></strong><span>Account খোলার ঝামেলা নেই</span></div><div className="stats-aside">একটু কৌতূহলই<br /><em>বড় কিছু তৈরির শুরু।</em></div></div></section>
+      <section className="stats-strip"><div className="shell stats-grid"><div><strong>৩০+</strong><span>Programming Language</span></div><div><strong>৭</strong><span>শেখার Category</span></div><div><strong>০</strong><span>Account খোলার ঝামেলা নেই</span></div><div className="stats-aside">একটু কৌতূহলই<br /><em>বড় কিছু তৈরির শুরু।</em></div></div></section>
 
       <section className="master-course-promo"><div className="shell master-course-promo-inner"><div className="master-course-promo-mark"><Mark name="book" size={29} /></div><div className="master-course-promo-copy"><span className="section-kicker">বাংলা Programming Master Course</span><h2>শূন্য থেকে <span>সফটওয়্যার ডেভেলপার।</span></h2><p>১৯টি অধ্যায় ও ১৩৭টি পাঠে কম্পিউটার, Programming, Web, Database, Git, API, Testing এবং বাস্তব project শেখো—একদম শুরু থেকে।</p></div><Link href="/courses/" className="button button-primary">সম্পূর্ণ কোর্স শুরু করো <Mark name="arrow" size={18} /></Link></div></section>
 

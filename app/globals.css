@@ -1411,18 +1411,3 @@ html[data-theme="dark"] :is(
 ){filter:none}
 html[data-theme="dark"] .search-backdrop{background:rgba(255,255,255,.55)}
 @media print{html[data-theme="dark"],html[data-theme="dark"] *{filter:none!important}}
-
-/* Stats strip: balanced columns, no stranded empty gap before the aside */
-@media(min-width:721px){
-.stats-grid{grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.35fr);align-items:stretch}
-.stats-grid>div{display:flex;align-items:center;min-height:126px}
-.stats-grid>div:not(.stats-aside){margin-right:0;padding:0 24px;gap:14px;border-right:1px solid #e6e9f1}
-.stats-grid>div:first-child{padding-left:0}
-.stats-grid span{max-width:none;font-size:13px;line-height:1.45}
-.stats-aside{display:block!important;margin:0;padding:0 0 0 28px;text-align:left;align-self:center;min-height:0!important}
-}
-@media(min-width:721px) and (max-width:1000px){
-.stats-grid>div:not(.stats-aside){padding:0 14px}
-.stats-grid strong{font-size:24px}
-.stats-aside{font-size:13px;padding-left:16px}
-}
