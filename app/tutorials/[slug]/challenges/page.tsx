@@ -7,7 +7,7 @@ import { TutorialSidebar } from "@/components/TutorialSidebar";
 
 export const dynamicParams = false;
 export function generateStaticParams() { return languages.map((language) => ({ slug: language.slug })); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const course = getTutorialCourse(slug); return course ? { title: `${course.name} প্রজেক্ট ও চ্যালেঞ্জ — CodeAtlas` } : { title: "চ্যালেঞ্জ পাওয়া যায়নি" }; }
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const course = getTutorialCourse(slug); return course ? { title: `${course.name} প্রজেক্ট ও চ্যালেঞ্জ` } : { title: "চ্যালেঞ্জ পাওয়া যায়নি" }; }
 
 export default async function TutorialChallengesPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params; const course = getTutorialCourse(slug); if (!course) notFound();

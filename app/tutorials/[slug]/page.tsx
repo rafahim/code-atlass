@@ -6,6 +6,8 @@ import { localizeLanguage } from "@/data/bn";
 import { getTutorialCourse, tutorialResourceLinks } from "@/data/language-tutorials";
 import { TutorialSidebar } from "@/components/TutorialSidebar";
 import { Mark } from "@/components/Mark";
+import { JsonLd } from "@/components/JsonLd";
+import { SITE_NAME, absoluteUrl } from "@/lib/site";
 
 export const dynamicParams = false;
 export function generateStaticParams() { return languages.map((language) => ({ slug: language.slug })); }
@@ -26,7 +28,9 @@ export default async function TutorialOverviewPage({ params }: { params: Promise
   const localized = language ? localizeLanguage(language) : undefined;
   const resources = tutorialResourceLinks(slug).filter((item) => item.key !== "tutorial");
   const firstLesson = course.lessons[0];
+  const courseSchema = { "@context": "https://schema.org", "@type": "Course", name: `${course.name} Tutorial (বাংলা)`, description: localized?.descriptionBn ?? course.description, inLanguage: "bn", url: absoluteUrl(`/tutorials/${slug}/`), isAccessibleForFree: true, provider: { "@type": "Organization", name: SITE_NAME, url: absoluteUrl("/") }, hasCourseInstance: { "@type": "CourseInstance", courseMode: "online", courseWorkload: "PT1H" } };
   return <>
+    <JsonLd data={courseSchema} />
     <section className="atlas-course-hero"><div className="shell">
       <div className="breadcrumbs"><Link href="/">হোম</Link><span>/</span><Link href="/tutorials/">পাঠসমূহ</Link><span>/</span><span>{course.name}</span></div>
       <div className="atlas-course-hero-grid"><div><span className="section-kicker">{localized?.categoryBn ?? course.category} · বাংলা পাঠক্রম</span><h1>{course.name} <span>পাঠক্রম</span></h1><p>{localized?.descriptionBn ?? course.description}</p><div className="atlas-course-hero-badges"><span>{localized?.levelBn ?? course.level}</span><span>{course.lessons.length}টি ধাপে সাজানো পাঠ</span><span>নিজের গতিতে শেখো</span></div><Link href={`/tutorials/${slug}/${firstLesson.slug}/`} className="button button-primary">প্রথম পাঠ শুরু করো <Mark name="arrow" size={17}/></Link></div>

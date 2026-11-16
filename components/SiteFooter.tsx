@@ -1,19 +1,92 @@
 import Link from "next/link";
 import { Mark } from "@/components/Mark";
+import { CONTACT_EMAIL, DEVELOPER, assetPath } from "@/lib/site";
+
+const learnLinks = [
+  { href: "/courses/", label: "সম্পূর্ণ বাংলা কোর্স" },
+  { href: "/tutorials/", label: "সব প্রোগ্রামিং পাঠ" },
+  { href: "/hsc-preparation/", label: "HSC Preparation" },
+  { href: "/languages/", label: "সব Language" },
+  { href: "/practice/", label: "কোড প্র্যাকটিস" },
+];
+
+const popularLinks = [
+  { href: "/tutorials/html/", label: "HTML" },
+  { href: "/tutorials/css/", label: "CSS" },
+  { href: "/tutorials/javascript/", label: "JavaScript" },
+  { href: "/tutorials/python/", label: "Python" },
+  { href: "/tutorials/c/", label: "C Programming" },
+  { href: "/tutorials/java/", label: "Java" },
+];
+
+const siteLinks = [
+  { href: "/about/", label: "আমাদের সম্পর্কে" },
+  { href: "/developer/", label: "ডেভেলপার" },
+  { href: "/privacy/", label: "গোপনীয়তা নীতি" },
+  { href: "/terms/", label: "শর্তাবলি" },
+];
 
 export function SiteFooter() {
+  const year = new Date().getFullYear();
   return (
-    <footer className="site-footer">
-      <div className="shell footer-main">
-        <div className="footer-brand-block">
-          <Link href="/" className="brand footer-brand"><span className="brand-mark"><Mark name="code" size={21} /></span><span>code<span className="brand-accent">atlas</span><small>শিখো • তৈরি করো • এগিয়ে যাও</small></span></Link>
-          <p>Programming শেখার সহজ ঠিকানা। একদম শুরু থেকে নিজের project তৈরি করা পর্যন্ত—সবকিছু এক জায়গায়।</p>
+    <footer className="site-footer" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" className="sr-only">Code Atlas ফুটার</h2>
+      <div className="footer-glow" aria-hidden="true" />
+      <div className="shell">
+        <div className="footer-cta">
+          <div className="footer-cta-copy">
+            <span className="footer-cta-kicker"><Mark name="spark" size={14} /> শুরু করতে প্রস্তুত?</span>
+            <h3>আজই নিজের প্রথম কোড লিখে ফেলো</h3>
+            <p>Account ছাড়াই শেখা শুরু করো — পছন্দের ভাষা বেছে নাও আর ব্রাউজারেই কোড চালিয়ে দেখো।</p>
+          </div>
+          <div className="footer-cta-actions">
+            <Link href="/practice/" className="footer-cta-primary">কোড লেখা শুরু করো <Mark name="arrow" size={16} /></Link>
+            <Link href="/languages/" className="footer-cta-secondary">সব Language দেখো</Link>
+          </div>
         </div>
-        <div className="footer-column"><strong>শেখা শুরু করো</strong><Link href="/courses/">সম্পূর্ণ বাংলা কোর্স</Link><Link href="/hsc-preparation/">HSC Preparation</Link><Link href="/languages/">সব Language</Link><Link href="/practice/">কোড প্র্যাকটিস</Link><Link href="/#learning-paths">শেখার পথ</Link></div>
-        <div className="footer-column"><strong>CodeAtlas</strong><Link href="/about/">আমাদের সম্পর্কে</Link><Link href="/privacy/">গোপনীয়তা নীতি</Link></div>
-        <div className="footer-note"><span className="footer-note-icon"><Mark name="spark" size={17} /></span><p>শেখার জন্য account দরকার নেই।<br />শুরু করো নিজের গতিতে।</p></div>
+
+        <div className="footer-main">
+          <div className="footer-brand-block">
+            <Link href="/" className="brand footer-brand" aria-label="Code Atlas হোম">
+              <span className="brand-mark"><Mark name="code" size={21} /></span>
+              <span>Code <span className="brand-accent">Atlas</span><small>শিখো • তৈরি করো • এগিয়ে যাও</small></span>
+            </Link>
+            <p>বাংলায় Programming শেখার সহজ ঠিকানা। একদম শুরু থেকে নিজের project তৈরি করা পর্যন্ত — সবকিছু এক জায়গায়, কোনো account ছাড়াই।</p>
+            <a className="footer-mail" href={`mailto:${CONTACT_EMAIL}`}><Mark name="mail" size={15} /> {CONTACT_EMAIL}</a>
+            <Link href="/developer/" className="footer-dev-card">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={assetPath(DEVELOPER.image)} alt="" width={44} height={44} loading="lazy" decoding="async" />
+              <span><small>তৈরি করেছেন</small><strong>{DEVELOPER.name}</strong></span>
+              <Mark name="arrow" size={16} />
+            </Link>
+          </div>
+
+          <nav className="footer-column" aria-label="শেখা শুরু করো">
+            <strong>শেখা শুরু করো</strong>
+            {learnLinks.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
+          </nav>
+
+          <nav className="footer-column" aria-label="জনপ্রিয় বিষয়">
+            <strong>জনপ্রিয় বিষয়</strong>
+            {popularLinks.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
+          </nav>
+
+          <nav className="footer-column" aria-label="Code Atlas">
+            <strong>Code Atlas</strong>
+            {siteLinks.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
+          </nav>
+        </div>
+
+        <div className="footer-bottom">
+          <span>© {year} Code Atlas. সর্বস্বত্ব সংরক্ষিত।</span>
+          <div className="footer-bottom-links">
+            <Link href="/privacy/">গোপনীয়তা নীতি</Link>
+            <Link href="/terms/">শর্তাবলি</Link>
+            <Link href="/developer/">Developed by <b>{DEVELOPER.name}</b></Link>
+          </div>
+          <a href="#top" className="footer-top" aria-label="পেজের উপরে যাও">উপরে যাও <Mark name="arrow-up" size={14} /></a>
+        </div>
       </div>
-      <div className="shell footer-bottom"><span>© {new Date().getFullYear()} CodeAtlas. সর্বস্বত্ব সংরক্ষিত।</span><span>কৌতূহল থেকেই শুরু হয় নতুন কিছু।</span></div>
     </footer>
   );
 }

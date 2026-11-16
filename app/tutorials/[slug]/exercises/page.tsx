@@ -8,7 +8,7 @@ import { TutorialExerciseBoard, type ExerciseItem } from "@/components/TutorialE
 
 export const dynamicParams = false;
 export function generateStaticParams() { return languages.map((language) => ({ slug: language.slug })); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const course = getTutorialCourse(slug); return course ? { title: `${course.name} অনুশীলন — CodeAtlas` } : { title: "অনুশীলন পাওয়া যায়নি" }; }
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const course = getTutorialCourse(slug); return course ? { title: `${course.name} অনুশীলন` } : { title: "অনুশীলন পাওয়া যায়নি" }; }
 
 export default async function TutorialExercisesPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params; const course = getTutorialCourse(slug); if (!course) notFound();

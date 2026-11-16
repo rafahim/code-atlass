@@ -44,7 +44,7 @@ function linkify(text: string) {
 }
 
 function buildTryItFiles(chapterSlug: string, codes: string[]) {
-  const htmlStarter = `<!doctype html>\n<html lang="bn">\n<head>\n  <meta charset="UTF-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <title>আমার প্রথম উদাহরণ</title>\n</head>\n<body>\n  <main class="card">\n    <h1 id="title">আমার প্রথম ওয়েবপেজ</h1>\n    <p>আমি CodeAtlas থেকে HTML, CSS ও JavaScript শিখছি।</p>\n    <button id="change">এখানে চাপ দাও</button>\n  </main>\n</body>\n</html>`;
+  const htmlStarter = `<!doctype html>\n<html lang="bn">\n<head>\n  <meta charset="UTF-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <title>আমার প্রথম উদাহরণ</title>\n</head>\n<body>\n  <main class="card">\n    <h1 id="title">আমার প্রথম ওয়েবপেজ</h1>\n    <p>আমি Code Atlas থেকে HTML, CSS ও JavaScript শিখছি।</p>\n    <button id="change">এখানে চাপ দাও</button>\n  </main>\n</body>\n</html>`;
   let html = htmlStarter;
   let css = `body {\n  font-family: Arial, sans-serif;\n  padding: 24px;\n  background: #f3f4f6;\n}\n.card {\n  max-width: 560px;\n  margin: 30px auto;\n  padding: 24px;\n  border-radius: 16px;\n  background: white;\n  box-shadow: 0 8px 24px #15223814;\n}\nh1 { color: #3157b7; }\nbutton { padding: 10px 16px; border: 0; border-radius: 8px; background: #3157b7; color: white; cursor: pointer; }`;
   let js = `const button = document.querySelector("#change");\nconst title = document.querySelector("#title");\n\nbutton?.addEventListener("click", () => {\n  title.textContent = "চমৎকার! তুমি নিজে code পরিবর্তন করেছ।";\n  console.log("Button-এ click হয়েছে");\n});`;

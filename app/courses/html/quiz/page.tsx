@@ -4,7 +4,7 @@ import { HtmlCourseQuiz } from "@/components/HtmlCourseQuiz";
 import { getHtmlTeaching } from "@/data/html-teaching";
 import { getCourseChapter, stripLessonPrefix } from "@/data/curriculum";
 
-export const metadata: Metadata = { title: "HTML Quiz | CodeAtlas", description: "HTML-এর সব পাঠ থেকে বাংলা বহুনির্বাচনি অনুশীলন।" };
+export const metadata: Metadata = { title: "HTML Quiz — বাংলা HTML Tutorial", description: "HTML-এর সব পাঠ থেকে বাংলা বহুনির্বাচনি অনুশীলন।" };
 
 export default function HtmlQuizPage() {
   const chapter = getCourseChapter("html")!;

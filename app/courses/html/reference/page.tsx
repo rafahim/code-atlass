@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: "HTML Reference | CodeAtlas", description: "প্রয়োজনীয় HTML tags ও attributes-এর বাংলা quick reference।" };
+export const metadata: Metadata = { title: "HTML Reference — বাংলা HTML Tutorial", description: "প্রয়োজনীয় HTML tags ও attributes-এর বাংলা quick reference।" };
 
 const tags = [
   ["html", "সম্পূর্ণ HTML document-এর root element"], ["head", "পেজের metadata ও title রাখে"], ["title", "Browser tab-এর পেজের নাম"], ["body", "Browser-এ দেখা যায় এমন মূল content"],

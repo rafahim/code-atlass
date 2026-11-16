@@ -19,7 +19,7 @@ export default function HscPracticalPage() {
     <section className="section hsc-practical-page"><div className="shell hsc-single-column">
       <div className="hsc-practical-intro"><Mark name="lightbulb" size={21}/><p><strong>কীভাবে করবে:</strong> প্রতিটি কাজের ধাপ অনুসরণ করো। কাজটি সত্যিই সম্পন্ন হলে checkbox-এ টিক দাও। অগ্রগতি এই browser-এ সংরক্ষিত থাকবে; account লাগবে না।</p></div>
       <HscPracticalList tasks={hscPracticals}/>
-      <div className="hsc-runtime-grid"><div><strong>HTML Practical</strong><p>CodeAtlas-এর Code Practice ব্যবহার করে HTML, CSS ও JavaScript-এর output দেখতে পারো।</p><Link href="/practice/">Code Practice খোলো <Mark name="arrow" size={14}/></Link></div><div><strong>C ও Database Practical</strong><p>C চালাতে compiler এবং SQL/SQLite চালাতে SQLite-compatible tool দরকার। Browser preview নিজে থেকে এগুলো compile করে না।</p><a href={hscPdfPage(34)} target="_blank" rel="noreferrer">মূল practical নির্দেশনা <Mark name="external" size={13}/></a></div></div>
+      <div className="hsc-runtime-grid"><div><strong>HTML Practical</strong><p>Code Atlas-এর Code Practice ব্যবহার করে HTML, CSS ও JavaScript-এর output দেখতে পারো।</p><Link href="/practice/">Code Practice খোলো <Mark name="arrow" size={14}/></Link></div><div><strong>C ও Database Practical</strong><p>C চালাতে compiler এবং SQL/SQLite চালাতে SQLite-compatible tool দরকার। Browser preview নিজে থেকে এগুলো compile করে না।</p><a href={hscPdfPage(34)} target="_blank" rel="noreferrer">মূল practical নির্দেশনা <Mark name="external" size={13}/></a></div></div>
     </div></section>
   </>;
 }

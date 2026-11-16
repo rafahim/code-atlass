@@ -12,7 +12,7 @@ export const dynamicParams = false;
 export function generateStaticParams() { return hscChapters.flatMap((chapter) => chapter.lessons.map((lesson) => ({ chapter: chapter.slug, lesson: lesson.slug }))); }
 export async function generateMetadata({ params }: { params: Promise<{ chapter: string; lesson: string }> }): Promise<Metadata> {
   const { chapter, lesson } = await params; const found = getHscLesson(chapter, lesson);
-  return found ? { title: `${found.lesson.title} · HSC ICT`, description: `HSC ICT অধ্যায় ${bnNumber(found.chapter.number)}-এর ${found.lesson.title} পাঠ।` } : { title: "পাঠ পাওয়া যায়নি" };
+  return found ? { title: `${found.lesson.title} · HSC ICT`, description: `HSC ICT অধ্যায় ${bnNumber(found.chapter.number)}-এর ${found.lesson.title} পাঠ। সহজ বাংলা ব্যাখ্যা, MCQ অনুশীলন ও পরীক্ষার প্রস্তুতির জন্য সাজানো।` } : { title: "পাঠ পাওয়া যায়নি" };
 }
 
 function makeBlocks(content: string) {

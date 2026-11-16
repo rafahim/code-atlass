@@ -478,7 +478,7 @@ function buildFromMasterCourse(language: Language): TutorialCourse | undefined {
     { title: `${language.name} দিয়ে ছোট practical project`, level: "Beginner", brief: "এই chapter-এর ধারণা ব্যবহার করে বাস্তব সমস্যার ছোট সমাধান তৈরি করো।", requirements: ["Problem, input ও output নির্ধারণ করো।", "ছোট function/section-এ code ভাগ করো।", "ভুল input ও boundary case পরীক্ষা করো।"] },
     { title: `${language.name} revision challenge`, level: "Practice", brief: "এই course-এর ৩টি আলাদা lesson মিলিয়ে একটি ছোট কাজ তৈরি করো।", requirements: ["কমপক্ষে ৩টি lesson-এর ধারণা ব্যবহার করো।", "নিজের test case লেখো।", "কী শিখেছ README বা note-এ লেখো।"] }
   ];
-  return { slug: language.slug, name: language.name, description: chapter.description, category: language.category, level: language.level, setup: `${language.name} শেখার জন্য official toolchain বা trusted editor ব্যবহার করো। প্রতিটি lesson-এ ব্যবহৃত command ও environment-এর version মিলিয়ে নাও।`, lessons: baseLessons, references, projects, sourceNote: "এই course-এর মূল ব্যাখ্যা CodeAtlas-এর বাংলা Master Course content থেকে নেওয়া এবং নতুন tutorial navigation ও practice অংশে সাজানো হয়েছে।" };
+  return { slug: language.slug, name: language.name, description: chapter.description, category: language.category, level: language.level, setup: `${language.name} শেখার জন্য official toolchain বা trusted editor ব্যবহার করো। প্রতিটি lesson-এ ব্যবহৃত command ও environment-এর version মিলিয়ে নাও।`, lessons: baseLessons, references, projects, sourceNote: "এই course-এর মূল ব্যাখ্যা Code Atlas-এর বাংলা Master Course content থেকে নেওয়া এবং নতুন tutorial navigation ও practice অংশে সাজানো হয়েছে।" };
 }
 
 function buildOriginalCourse(language: Language): TutorialCourse {
@@ -489,7 +489,7 @@ function buildOriginalCourse(language: Language): TutorialCourse {
     { title: `${language.name} শেখার চূড়ান্ত চ্যালেঞ্জ`, level: "Intermediate", brief: `${language.name}-এর variable, condition, loop, function ও collection ব্যবহার করে একটি ছোট command-line বা tool project তৈরি করো।`, requirements: ["Problem ও data structure নির্ধারণ করো।", "কমপক্ষে তিনটি পুনর্ব্যবহারযোগ্য function লেখো।", "ইনপুট যাচাই ও ত্রুটি সামলানোর ব্যবস্থা রাখো।", "README-তে setup, run ও test নির্দেশনা লিখে রাখো।"] },
     { title: `${language.name} ত্রুটি খুঁজে সমাধানের চ্যালেঞ্জ`, level: "Practice", brief: "ইচ্ছাকৃতভাবে ভুলসহ একটি ছোট program লিখে ত্রুটি খুঁজে ঠিক করো।", requirements: ["কমপক্ষে তিনটি আলাদা bug তৈরি করো।", "প্রতিটি bug-এর কারণ লেখো।", "একটি test দিয়ে fix যাচাই করো।"] }
   ];
-  return { slug: language.slug, name: language.name, description: localizeLanguage(language).descriptionBn, category: language.category, level: language.level, setup: profile.setup, lessons, references: profile.references, projects, sourceNote: "এই ভাষার পাঠগুলো CodeAtlas-এর নিজস্ব বাংলা শিক্ষাসামগ্রী। ভাষার official documentation ও version-specific নির্দেশনা দিয়ে আরও বিস্তৃত করা হবে।" };
+  return { slug: language.slug, name: language.name, description: localizeLanguage(language).descriptionBn, category: language.category, level: language.level, setup: profile.setup, lessons, references: profile.references, projects, sourceNote: "এই ভাষার পাঠগুলো Code Atlas-এর নিজস্ব বাংলা শিক্ষাসামগ্রী। ভাষার official documentation ও version-specific নির্দেশনা দিয়ে আরও বিস্তৃত করা হবে।" };
 }
 
 export function getTutorialCourse(slug: string): TutorialCourse | undefined {

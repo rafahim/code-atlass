@@ -4,7 +4,7 @@ import { CopyCodeButton } from "@/components/CopyCodeButton";
 import { getHtmlTeaching } from "@/data/html-teaching";
 import { getCourseChapter, stripLessonPrefix, toBengaliNumber } from "@/data/curriculum";
 
-export const metadata: Metadata = { title: "HTML Examples | CodeAtlas", description: "সহজ বাংলায় HTML code example, ব্যাখ্যা ও live practice।" };
+export const metadata: Metadata = { title: "HTML Examples — বাংলা HTML Tutorial", description: "সহজ বাংলায় HTML code example, ব্যাখ্যা ও live practice।" };
 
 export default function HtmlExamplesPage() {
   const chapter = getCourseChapter("html")!;

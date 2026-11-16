@@ -2,20 +2,50 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { JsonLd } from "@/components/JsonLd";
+import { SITE_NAME, SITE_TAGLINE, SITE_DESCRIPTION, SITE_LOCALE, SITE_URL, CONTACT_EMAIL, absoluteUrl } from "@/lib/site";
+
+const FONT_URL =
+  "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Hind+Siliguri:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(`${SITE_URL}/`),
   title: {
-    default: "CodeAtlas — বাংলায় Programming শেখো",
-    template: "%s | CodeAtlas",
+    default: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    template: `%s | ${SITE_NAME}`,
   },
-  description: "বাংলায় Programming Language শেখো, সহজ Roadmap অনুসরণ করো এবং Code Practice page-এ নিজের code লিখে দেখো।",
-  applicationName: "CodeAtlas",
-  keywords: ["বাংলায় programming শেখা", "Programming tutorials Bangla", "coding practice", "Python Bangla", "JavaScript Bangla", "HTML CSS tutorial", "Programming language"],
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  authors: [{ name: "RA Fahim", url: absoluteUrl("/developer/") }],
+  creator: "RA Fahim",
+  publisher: SITE_NAME,
+  category: "education",
+  keywords: [
+    "বাংলায় programming শেখা",
+    "Programming tutorials Bangla",
+    "বাংলা কোডিং টিউটোরিয়াল",
+    "HTML CSS JavaScript বাংলা",
+    "Python Bangla tutorial",
+    "HSC ICT প্রস্তুতি",
+    "coding practice online",
+    "Learn programming in Bengali",
+  ],
+  alternates: { canonical: "./" },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
   openGraph: {
-    title: "CodeAtlas — বাংলায় Programming শেখো",
-    description: "বাংলায় সহজভাবে Programming শেখার উন্মুক্ত জায়গা।",
     type: "website",
+    siteName: SITE_NAME,
+    locale: SITE_LOCALE,
+    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    description: "বাংলায় সহজভাবে Programming শেখার উন্মুক্ত জায়গা — পাঠ, quiz, অনুশীলন ও Code Practice এক ঠিকানায়।",
+    url: "./",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    description: "বাংলায় সহজভাবে Programming শেখার উন্মুক্ত জায়গা।",
+  },
+  formatDetection: { telephone: false, email: false, address: false },
 };
 
 export const viewport: Viewport = {
@@ -24,12 +54,45 @@ export const viewport: Viewport = {
   themeColor: "#101629",
 };
 
+const siteSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
+    name: SITE_NAME,
+    alternateName: ["CodeAtlas", "Code Atlas বাংলা"],
+    url: `${SITE_URL}/`,
+    description: SITE_DESCRIPTION,
+    inLanguage: "bn",
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "@id": `${SITE_URL}/#organization`,
+    name: SITE_NAME,
+    url: `${SITE_URL}/`,
+    logo: absoluteUrl("/icon.svg"),
+    email: CONTACT_EMAIL,
+    contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: CONTACT_EMAIL, availableLanguage: ["bn", "en"] },
+    description: SITE_DESCRIPTION,
+    founder: { "@type": "Person", name: "RA Fahim", url: absoluteUrl("/developer/") },
+  },
+];
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="bn">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="stylesheet" href={FONT_URL} />
+        <JsonLd data={siteSchema} />
+      </head>
       <body>
+        <a className="skip-link" href="#main-content">মূল অংশে যাও</a>
         <SiteHeader />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <SiteFooter />
       </body>
     </html>

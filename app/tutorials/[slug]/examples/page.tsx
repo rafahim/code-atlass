@@ -8,7 +8,7 @@ import { TutorialCodeExample } from "@/components/TutorialCodeExample";
 
 export const dynamicParams = false;
 export function generateStaticParams() { return languages.map((language) => ({ slug: language.slug })); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const course = getTutorialCourse(slug); return course ? { title: `${course.name} উদাহরণ — CodeAtlas` } : { title: "উদাহরণ পাওয়া যায়নি" }; }
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const course = getTutorialCourse(slug); return course ? { title: `${course.name} উদাহরণ` } : { title: "উদাহরণ পাওয়া যায়নি" }; }
 
 export default async function TutorialExamplesPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params; const course = getTutorialCourse(slug); if (!course) notFound();

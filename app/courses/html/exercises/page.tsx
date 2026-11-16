@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getHtmlTeaching } from "@/data/html-teaching";
 import { getCourseChapter, stripLessonPrefix, toBengaliNumber } from "@/data/curriculum";
 
-export const metadata: Metadata = { title: "HTML Exercises | CodeAtlas", description: "HTML শেখার জন্য topic-wise বাংলা অনুশীলন।" };
+export const metadata: Metadata = { title: "HTML Exercises — বাংলা HTML Tutorial", description: "HTML শেখার জন্য topic-wise বাংলা অনুশীলন।" };
 
 export default function HtmlExercisesPage() {
   const chapter = getCourseChapter("html")!;

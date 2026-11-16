@@ -35,15 +35,25 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Set the correct repository path
+      - name: Set the correct repository path and site URL
         shell: bash
+        env:
+          # Optional: add a repository variable named SITE_URL (Settings -> Secrets and variables -> Actions -> Variables)
+          # with your custom domain, for example https://codeatlas.com. Leave it unset to use GitHub Pages.
+          CUSTOM_SITE_URL: ${{ vars.SITE_URL }}
         run: |
           REPOSITORY_NAME="${GITHUB_REPOSITORY#*/}"
           OWNER="${GITHUB_REPOSITORY%%/*}"
-          if [[ "$REPOSITORY_NAME" == "$OWNER.github.io" ]]; then
+          OWNER_LOWER="$(echo "$OWNER" | tr '[:upper:]' '[:lower:]')"
+          if [[ -n "$CUSTOM_SITE_URL" ]]; then
             echo "BASE_PATH=" >> "$GITHUB_ENV"
+            echo "NEXT_PUBLIC_SITE_URL=${CUSTOM_SITE_URL%/}" >> "$GITHUB_ENV"
+          elif [[ "$REPOSITORY_NAME" == "$OWNER.github.io" ]]; then
+            echo "BASE_PATH=" >> "$GITHUB_ENV"
+            echo "NEXT_PUBLIC_SITE_URL=https://$OWNER_LOWER.github.io" >> "$GITHUB_ENV"
           else
             echo "BASE_PATH=/$REPOSITORY_NAME" >> "$GITHUB_ENV"
+            echo "NEXT_PUBLIC_SITE_URL=https://$OWNER_LOWER.github.io" >> "$GITHUB_ENV"
           fi
 
       - name: Build static website

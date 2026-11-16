@@ -102,7 +102,7 @@ export function LanguageCodePlayground({ language, slug, lessonTitle, lessonSlug
       <div className="atlas-runtime-note atlas-language-runtime-note">
         <strong>এই কোড নিজের কম্পিউটারে কীভাবে চালাবে?</strong>
         <p>{setup}</p>
-        <p>CodeAtlas-এর ব্রাউজারে এই ভাষার compiler বা runtime চালু নেই। এখানে কোড সম্পাদনা, কপি, খসড়া সংরক্ষণ ও ফাইল ডাউনলোড করা যাবে। বাস্তব ফলাফল দেখতে উপরের নির্দেশনা অনুযায়ী নিজের কম্পিউটারে প্রয়োজনীয় compiler বা runtime দিয়ে চালাতে হবে।</p>
+        <p>Code Atlas-এর ব্রাউজারে এই ভাষার compiler বা runtime চালু নেই। এখানে কোড সম্পাদনা, কপি, খসড়া সংরক্ষণ ও ফাইল ডাউনলোড করা যাবে। বাস্তব ফলাফল দেখতে উপরের নির্দেশনা অনুযায়ী নিজের কম্পিউটারে প্রয়োজনীয় compiler বা runtime দিয়ে চালাতে হবে।</p>
       </div>
     </section>
   );

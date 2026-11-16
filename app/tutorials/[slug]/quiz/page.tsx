@@ -8,7 +8,7 @@ import { TutorialQuizBoard } from "@/components/TutorialQuizBoard";
 
 export const dynamicParams = false;
 export function generateStaticParams() { return languages.map((language) => ({ slug: language.slug })); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const course = getTutorialCourse(slug); return course ? { title: `${course.name} কুইজ — CodeAtlas` } : { title: "কুইজ পাওয়া যায়নি" }; }
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const course = getTutorialCourse(slug); return course ? { title: `${course.name} কুইজ` } : { title: "কুইজ পাওয়া যায়নি" }; }
 
 export default async function TutorialQuizPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params; const course = getTutorialCourse(slug); if (!course) notFound();

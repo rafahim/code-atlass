@@ -20,7 +20,7 @@ export function generateStaticParams() { return allTutorialLessonParams; }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string; lesson: string }> }): Promise<Metadata> {
   const { slug, lesson } = await params;
   const result = getTutorialLesson(slug, lesson);
-  return result ? { title: `${result.lesson.title} — ${result.course.name} Tutorial`, description: result.lesson.summary } : { title: "পাঠ পাওয়া যায়নি" };
+  return result ? { title: `${result.lesson.title} — ${result.course.name} Tutorial`, description: `${result.lesson.summary} ${result.course.name} Tutorial-এর এই পাঠে উদাহরণ, অনুশীলন ও quiz-সহ বাংলায় ধাপে ধাপে শেখো।` } : { title: "পাঠ পাওয়া যায়নি" };
 }
 
 function toBn(value: number) { return String(value).replace(/[0-9]/g, (digit) => "০১২৩৪৫৬৭৮৯"[Number(digit)]); }
