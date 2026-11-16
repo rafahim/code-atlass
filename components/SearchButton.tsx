@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
+import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
 import { Mark } from "@/components/Mark";
 import { assetPath } from "@/lib/site";
@@ -31,22 +32,57 @@ function loadIndex() {
   return indexPromise;
 }
 
+/** Normalise so different keyboards/fonts of the same Bangla word still match. */
+const norm = (value: string) => value.normalize("NFC").replace(/[\u200c\u200d]/g, "").toLowerCase();
+
+/** Bangla spellings people type -> the English terms the lessons actually use. */
+const ALIAS_SOURCE: Record<string, string[]> = {
+  পাইথন: ["python"], জাভাস্ক্রিপ্ট: ["javascript"], জাভাস্ক্রিপট: ["javascript"], জাভা: ["java"],
+  এইচটিএমএল: ["html"], সিএসএস: ["css"], টাইপস্ক্রিপ্ট: ["typescript"], সিপিপি: ["c++", "cpp"],
+  পিএইচপি: ["php"], রুবি: ["ruby"], রাস্ট: ["rust"], সুইফট: ["swift"], কটলিন: ["kotlin"],
+  এসকিউএল: ["sql"], জুলিয়া: ["julia"], ডার্ট: ["dart"], লুয়া: ["lua"], স্কালা: ["scala"],
+  বাশ: ["bash"], ডকার: ["docker"], গিট: ["git"], এপিআই: ["api"], জেসন: ["json"],
+  ডাটাবেস: ["database"], ডেটাবেস: ["database"], ডাটা: ["data"], ডেটা: ["data"],
+  ভ্যারিয়েবল: ["variable"], ভেরিয়েবল: ["variable"], লুপ: ["loop"], ফাংশন: ["function"],
+  কন্ডিশন: ["condition"], শর্ত: ["condition"], অ্যারে: ["array"], এ্যারে: ["array"], স্ট্রিং: ["string"],
+  ক্লাস: ["class"], অবজেক্ট: ["object"], অ্যালগরিদম: ["algorithm"], এলগরিদম: ["algorithm"],
+  প্র্যাকটিস: ["practice"], প্রাকটিস: ["practice"], টিউটোরিয়াল: ["tutorial"], কুইজ: ["quiz"],
+  ওয়েবসাইট: ["website", "web"], ওয়েব: ["web"], ফ্রন্টএন্ড: ["frontend"], ব্যাকএন্ড: ["backend"],
+  টেস্টিং: ["testing", "test"], ডিবাগ: ["debug"], ইনপুট: ["input"], আউটপুট: ["output"],
+  লিস্ট: ["list"], ডিকশনারি: ["dictionary"], এরর: ["error"], ফাইল: ["file"],
+  কম্পিউটার: ["computer"], ইন্টারনেট: ["internet"], নেটওয়ার্ক: ["network"], সিকিউরিটি: ["security"],
+};
+const ALIASES: Array<[string, string[]]> = Object.entries(ALIAS_SOURCE).map(([key, value]) => [norm(key), value]);
+
+/** The word as typed, plus English equivalents (also while the Bangla word is only half typed). */
+function expand(token: string): string[] {
+  const out = new Set([token]);
+  for (const [key, english] of ALIASES) {
+    if (key === token || (token.length >= 2 && key.startsWith(token))) english.forEach((word) => out.add(word));
+  }
+  return [...out];
+}
+
 function rank(items: SearchItem[], query: string): SearchItem[] {
-  const tokens = query.toLowerCase().split(/\s+/).filter(Boolean);
+  const tokens = norm(query).split(/\s+/).filter(Boolean);
   if (!tokens.length) return [];
+  const options = tokens.map(expand);
   const scored: Array<{ item: SearchItem; score: number }> = [];
   for (const item of items) {
-    const title = item.t.toLowerCase();
-    const parent = (item.p || "").toLowerCase();
-    const haystack = `${title} ${parent} ${(item.s || "").toLowerCase()}`;
+    const title = norm(item.t);
+    const parent = norm(item.p || "");
+    const haystack = `${title} ${parent} ${norm(item.s || "")}`;
     let score = KIND_BONUS[item.k];
     let ok = true;
-    for (const token of tokens) {
-      if (!haystack.includes(token)) { ok = false; break; }
-      if (title.startsWith(token)) score += 6;
-      else if (title.includes(token)) score += 4;
-      else if (parent.includes(token)) score += 2;
-      else score += 1;
+    for (const choices of options) {
+      let best = 0;
+      for (const token of choices) {
+        if (!haystack.includes(token)) continue;
+        const points = title.startsWith(token) ? 6 : title.includes(token) ? 4 : parent.includes(token) ? 2 : 1;
+        if (points > best) best = points;
+      }
+      if (!best) { ok = false; break; }
+      score += best;
     }
     if (ok) scored.push({ item, score });
   }
@@ -69,9 +105,13 @@ function SearchDialog({ onClose }: { onClose: () => void }) {
   }, []);
 
   useEffect(() => {
-    const previous = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => { document.body.style.overflow = previous; };
+    const body = document.body;
+    const previousOverflow = body.style.overflow;
+    const previousPadding = body.style.paddingRight;
+    const scrollbar = window.innerWidth - document.documentElement.clientWidth; // keeps the page from jumping sideways
+    body.style.overflow = "hidden";
+    if (scrollbar > 0) body.style.paddingRight = `${scrollbar}px`;
+    return () => { body.style.overflow = previousOverflow; body.style.paddingRight = previousPadding; };
   }, []);
 
   const results = useMemo(() => {
@@ -91,7 +131,8 @@ function SearchDialog({ onClose }: { onClose: () => void }) {
   }, [onClose, router]);
 
   function onKeyDown(event: ReactKeyboardEvent) {
-    if (event.key === "Escape") { event.preventDefault(); onClose(); }
+    if (event.key === "Tab") { event.preventDefault(); }
+    else if (event.key === "Escape") { event.preventDefault(); onClose(); }
     else if (event.key === "ArrowDown") { event.preventDefault(); setActive((value) => Math.min(value + 1, Math.max(results.length - 1, 0))); }
     else if (event.key === "ArrowUp") { event.preventDefault(); setActive((value) => Math.max(value - 1, 0)); }
     else if (event.key === "Enter" && results[active]) { event.preventDefault(); go(results[active]); }
@@ -108,7 +149,7 @@ function SearchDialog({ onClose }: { onClose: () => void }) {
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="ভাষা, পাঠ বা বিষয় খোঁজো… (যেমন: python loop)"
+            placeholder="ভাষা, পাঠ বা বিষয় খোঁজো… (যেমন: python, লুপ, function)"
             aria-label="সার্চ"
             autoComplete="off"
             spellCheck={false}
@@ -121,7 +162,7 @@ function SearchDialog({ onClose }: { onClose: () => void }) {
           ) : !items ? (
             <p className="search-empty">লোড হচ্ছে…</p>
           ) : results.length === 0 ? (
-            <p className="search-empty">“{query}” এর জন্য কিছু পাওয়া যায়নি। অন্য শব্দ দিয়ে চেষ্টা করো।</p>
+            <p className="search-empty">“{query}” এর জন্য কিছু পাওয়া যায়নি। অন্য শব্দ বা ইংরেজি নাম (যেমন: loop) দিয়ে চেষ্টা করো।</p>
           ) : (
             <>
               {!searching && <p className="search-hint">জনপ্রিয় ভাষা</p>}
@@ -149,6 +190,7 @@ function SearchDialog({ onClose }: { onClose: () => void }) {
 
 export function SearchButton() {
   const [open, setOpen] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
@@ -166,15 +208,15 @@ export function SearchButton() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  const close = useCallback(() => setOpen(false), []);
+  const close = useCallback(() => { setOpen(false); buttonRef.current?.focus(); }, []);
   return (
     <>
-      <button type="button" className="header-icon-btn header-search-btn" onClick={() => setOpen(true)} aria-label="সাইটে খোঁজো (Ctrl+K)" title="খোঁজো (Ctrl+K বা /)">
+      <button ref={buttonRef} type="button" className="header-icon-btn header-search-btn" onClick={() => setOpen(true)} aria-label="সাইটে খোঁজো (Ctrl+K)" title="খোঁজো (Ctrl+K বা /)">
         <Mark name="search" size={18} />
         <span className="header-search-label">খোঁজো</span>
         <kbd>Ctrl K</kbd>
       </button>
-      {open && <SearchDialog onClose={close} />}
+      {open && createPortal(<SearchDialog onClose={close} />, document.body)}
     </>
   );
 }

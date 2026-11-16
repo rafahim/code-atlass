@@ -1486,3 +1486,27 @@ img,video,svg,canvas{max-width:100%}
 @media(max-width:720px){
   .language-card-copy p,.language-card-bottom span{font-size:12px!important}
 }
+
+/* v56: search dialog polish (now rendered in a portal, so the backdrop covers the whole screen) */
+.search-backdrop{inset:0;width:100%;height:100%;padding:12vh 16px 16px;background:rgba(14,20,37,.6);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);overscroll-behavior:contain}
+.search-dialog{max-height:min(580px,78vh);max-height:min(580px,78dvh);box-shadow:0 30px 90px rgba(14,20,37,.4),0 0 0 1px rgba(255,255,255,.06)}
+.search-input-row input{font-size:17px}
+.search-input-row input::placeholder{color:#9aa2b5}
+.search-esc{font-size:11px;cursor:pointer}
+.search-hint{font-size:12px;letter-spacing:.2px}
+.search-kind{min-width:78px;font-size:12px}
+.search-copy strong{font-size:15px}
+.search-copy small{font-size:12.5px}
+.search-foot{font-size:12px}
+.search-body{scrollbar-width:thin;scrollbar-color:#cfd3e2 transparent;overscroll-behavior:contain}
+.search-body::-webkit-scrollbar{width:8px}
+.search-body::-webkit-scrollbar-thumb{background:#cfd3e2;border-radius:8px}
+.search-results button{min-height:52px}
+.search-results button:focus-visible{outline:2px solid #7661f6;outline-offset:-2px}
+@media(max-width:720px){
+  .search-backdrop{padding:60px 10px 10px}
+  .search-dialog{max-height:calc(100dvh - 76px);border-radius:16px}
+  .search-input-row input{font-size:16px}
+  .search-kind{min-width:64px;font-size:11px}
+  .search-copy small{font-size:12px}
+}
