@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
-  authors: [{ name: "RA Fahim", url: absoluteUrl("/developer/") }],
+  authors: [{ name: "RA Fahim", url: absoluteUrl("/ra-fahim/") }],
   creator: "RA Fahim",
   publisher: SITE_NAME,
   category: "education",
@@ -76,7 +76,7 @@ const siteSchema = [
     email: CONTACT_EMAIL,
     contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: CONTACT_EMAIL, availableLanguage: ["bn", "en"] },
     description: SITE_DESCRIPTION,
-    founder: { "@type": "Person", name: "RA Fahim", url: absoluteUrl("/developer/") },
+    founder: { "@type": "Person", name: "RA Fahim", url: absoluteUrl("/ra-fahim/") },
   },
 ];
 

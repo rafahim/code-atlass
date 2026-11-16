@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/languages/", 0.9, "weekly"),
       entry("/practice/", 0.8, "monthly"),
     entry("/about/", 0.5, "yearly"),
-    entry("/developer/", 0.5, "yearly"),
+    entry("/ra-fahim/", 0.5, "yearly"),
     entry("/privacy/", 0.3, "yearly"),
     entry("/terms/", 0.3, "yearly"),
   ];

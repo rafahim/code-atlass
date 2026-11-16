@@ -1411,3 +1411,78 @@ html[data-theme="dark"] :is(
 ){filter:none}
 html[data-theme="dark"] .search-backdrop{background:rgba(255,255,255,.55)}
 @media print{html[data-theme="dark"],html[data-theme="dark"] *{filter:none!important}}
+
+/* v53: dark CTA band — heading text must be light so the first line is never lost on the dark background */
+.closing-inner{color:#fff}
+.closing-inner h2{color:#fff;position:relative;z-index:1}
+.closing-inner h2 span{color:#c7beff}
+.closing-inner p{color:#c3cbe0}
+.closing-inner .closing-orb{z-index:0;pointer-events:none}
+
+/* v54: responsive hardening */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{overflow-x:clip}
+img,video,svg,canvas{max-width:100%}
+@media(max-width:720px){
+  .filter-row{margin-right:-17px;padding-right:17px;-webkit-overflow-scrolling:touch}
+}
+
+/* v54: mobile readability + touch targets (phones) */
+@media(max-width:720px){
+  /* minimum readable text sizes */
+  .section-kicker,.eyebrow,.course-eyebrow,.course-card-label,.footer-cta-kicker,.hero-trust span,
+  .window-status,.code-ready,.code-file-label,.tutorial-sidebar-kicker,.card-link,.course-card-link,
+  .result-count,.filter-chip,.breadcrumbs,.atlas-tutorial-catalog-hero .breadcrumbs,.atlas-course-hero .breadcrumbs,
+  .atlas-lesson-hero .breadcrumbs,.atlas-resource-hero .breadcrumbs,.lesson-answer-label,
+  .tutorial-sidebar-overview,.tutorial-sidebar-chapter-title,.atlas-course-count,.course-chapter-count,
+  .course-total-pill,.tutorial-sidebar-count,.tutorial-sidebar-chapter-no,.course-lesson-number,
+  .atlas-tutorial-lesson-number,.float-card strong,.float-card small,.promo-mini-window footer,
+  .mobile-nav summary{font-size:12px!important}
+  .master-course-promo-copy p,.lesson-activity-intro,.course-guide-highlight,.lesson-complete-button,
+  .copy-lesson-code,.footer-bottom,.footer-bottom-links a{font-size:13px!important}
+  .brand small,.brand-text small{font-size:9px!important}
+
+  /* stats strip: stack number over label so nothing is cut off */
+  .stats-grid>div:not(.stats-aside){flex-direction:column;align-items:flex-start;gap:3px;padding:6px 6px 6px 0;margin-right:6px}
+  .stats-grid strong{font-size:24px}
+  .stats-grid span{font-size:12px;max-width:none}
+
+  /* master course promo: icon on top, readable copy below */
+  .master-course-promo-inner{grid-template-columns:1fr;gap:14px}
+  .master-course-promo-copy h2{font-size:24px}
+
+  /* footer brand must not wrap onto two lines */
+  .footer-brand .brand-text,.footer-brand{white-space:nowrap}
+
+  /* touch targets */
+  .footer-column a,.footer-bottom-links a,.text-link,.breadcrumbs a,.sidebar-link,
+  .tutorial-sidebar a,.tutorial-sidebar summary,.mobile-nav nav a{display:inline-flex;align-items:center;min-height:40px}
+  .mobile-nav nav a{display:flex;min-height:46px}
+  .tutorial-sidebar a,.tutorial-sidebar summary,.sidebar-link{display:flex}
+  main button,.practice-tool-btn,.practice-download-btn,.practice-run-btn{min-height:38px}
+  .practice-tool-btn,.practice-download-btn{min-width:40px}
+
+  /* inputs: 16px stops iOS Safari from zooming the page on focus */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),select{font-size:16px!important;min-height:44px}
+}
+@media(max-width:720px){
+  .filter-row{margin-right:0;padding-right:0}
+  .filter-row>*{flex:0 0 auto}
+}
+
+/* v54: tablets & small laptops — use the hamburger menu so the header never wraps */
+.brand,.brand-text,.brand-name{white-space:nowrap}
+@media(max-width:1100px){
+  .desktop-nav,.header-cta{display:none}
+  .mobile-nav{display:block}
+  .header-tools{margin-left:auto;margin-right:2px}
+  .mobile-nav nav{min-width:240px}
+  .mobile-nav nav a{font-size:15px}
+}
+@media(min-width:721px) and (max-width:1100px){
+  .header-search-btn .header-search-label,.header-search-btn kbd{display:inline-flex}
+}
+/* card text readability on phones */
+@media(max-width:720px){
+  .language-card-copy p,.language-card-bottom span{font-size:12px!important}
+}

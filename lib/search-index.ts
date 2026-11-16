@@ -16,7 +16,7 @@ const pages: SearchItem[] = [
   { t: "সব Language", u: "/languages/", k: "page", s: "languages ভাষা" },
   { t: "কোড প্র্যাকটিস", u: "/practice/", k: "page", s: "practice code editor run" },
   { t: "আমাদের সম্পর্কে", u: "/about/", k: "page", s: "about" },
-  { t: "ডেভেলপার", u: "/developer/", k: "page", s: "developer RA Fahim" },
+  { t: "ডেভেলপার", u: "/ra-fahim/", k: "page", s: "developer ra-fahim RA Fahim" },
 ];
 
 export function buildSearchIndex(): SearchItem[] {

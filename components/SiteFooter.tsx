@@ -20,7 +20,7 @@ const popularLinks = [
 
 const siteLinks = [
   { href: "/about/", label: "আমাদের সম্পর্কে" },
-  { href: "/developer/", label: "ডেভেলপার" },
+  { href: "/ra-fahim/", label: "ডেভেলপার" },
   { href: "/privacy/", label: "গোপনীয়তা নীতি" },
   { href: "/terms/", label: "শর্তাবলি" },
 ];
@@ -74,7 +74,7 @@ export function SiteFooter() {
           <div className="footer-bottom-links">
             <Link href="/privacy/">গোপনীয়তা নীতি</Link>
             <Link href="/terms/">শর্তাবলি</Link>
-            <Link href="/developer/">Developed by <b>{DEVELOPER.name}</b></Link>
+            <Link href="/ra-fahim/">Developed by <b>{DEVELOPER.name}</b></Link>
           </div>
           <a href="#top" className="footer-top" aria-label="পেজের উপরে যাও">উপরে যাও <Mark name="arrow-up" size={14} /></a>
         </div>

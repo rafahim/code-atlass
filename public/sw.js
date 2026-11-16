@@ -2,7 +2,7 @@
  * - Pages you have visited are cached and open without internet.
  * - Hashed build assets (/_next/static/) are cached first, fonts/images revalidate in the background.
  * Bump VERSION to clear old caches after a breaking change. */
-const VERSION = "v1";
+const VERSION = "v3";
 const STATIC_CACHE = `codeatlas-static-${VERSION}`;
 const PAGE_CACHE = `codeatlas-pages-${VERSION}`;
 const MAX_PAGES = 200;
