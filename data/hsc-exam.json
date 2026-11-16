@@ -1,0 +1,642 @@
+{
+  "modelTest": [
+    {
+      "chapter": 0,
+      "number": 1,
+      "question": "HTML-এর পূর্ণরূপ কোনটি?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "Hyper Transfer Main Link"
+        },
+        {
+          "label": "খ",
+          "text": "HyperText Markup Language"
+        },
+        {
+          "label": "গ",
+          "text": "Home Tool Markup Language"
+        },
+        {
+          "label": "ঘ",
+          "text": "HighText Machine Language"
+        }
+      ],
+      "answer": "খ"
+    },
+    {
+      "chapter": 0,
+      "number": 2,
+      "question": "ওয়েবপেজের ঠিকানাকে কী বলা হয়?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "CPU"
+        },
+        {
+          "label": "খ",
+          "text": "SQL"
+        },
+        {
+          "label": "গ",
+          "text": "URL"
+        },
+        {
+          "label": "ঘ",
+          "text": "RAM"
+        }
+      ],
+      "answer": "গ"
+    },
+    {
+      "chapter": 0,
+      "number": 3,
+      "question": "DNS-এর কাজ কী?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "ছবি আঁকা"
+        },
+        {
+          "label": "খ",
+          "text": "কোড compile"
+        },
+        {
+          "label": "গ",
+          "text": "database delete"
+        },
+        {
+          "label": "ঘ",
+          "text": "Domain name-কে IP-তে resolve করতে সহায়তা"
+        }
+      ],
+      "answer": "ঘ"
+    },
+    {
+      "chapter": 0,
+      "number": 4,
+      "question": "নতু ন tab-এ link খোলার বহুল ব্যবহৃত target value কোনটি?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "_selfs"
+        },
+        {
+          "label": "খ",
+          "text": "_newpage"
+        },
+        {
+          "label": "গ",
+          "text": "_tab"
+        },
+        {
+          "label": "ঘ",
+          "text": "_blank"
+        }
+      ],
+      "answer": "ঘ"
+    },
+    {
+      "chapter": 0,
+      "number": 5,
+      "question": "HTML-এ ছবির জন্য কোন tag?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "picturetext"
+        },
+        {
+          "label": "খ",
+          "text": "img"
+        },
+        {
+          "label": "গ",
+          "text": "src"
+        },
+        {
+          "label": "ঘ",
+          "text": "imagefile"
+        }
+      ],
+      "answer": "খ"
+    },
+    {
+      "chapter": 0,
+      "number": 6,
+      "question": "C ভাষার source code translate করার জন্য কোন tool ব্যবহৃত হয়?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "Browser"
+        },
+        {
+          "label": "খ",
+          "text": "Spreadsheet"
+        },
+        {
+          "label": "গ",
+          "text": "Compiler"
+        },
+        {
+          "label": "ঘ",
+          "text": "Search engine"
+        }
+      ],
+      "answer": "গ"
+    },
+    {
+      "chapter": 0,
+      "number": 7,
+      "question": "C-তে remainder operator কোনটি?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "/"
+        },
+        {
+          "label": "খ",
+          "text": "//"
+        },
+        {
+          "label": "গ",
+          "text": "**"
+        },
+        {
+          "label": "ঘ",
+          "text": "%"
+        }
+      ],
+      "answer": "ঘ"
+    },
+    {
+      "chapter": 0,
+      "number": 8,
+      "question": "C-তে equality পরীক্ষা করে কোন operator?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "="
+        },
+        {
+          "label": "খ",
+          "text": "!="
+        },
+        {
+          "label": "গ",
+          "text": "=="
+        },
+        {
+          "label": "ঘ",
+          "text": "=>"
+        }
+      ],
+      "answer": "গ"
+    },
+    {
+      "chapter": 0,
+      "number": 9,
+      "question": "কোন loop অন্তত একবার body চালায়?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "while"
+        },
+        {
+          "label": "খ",
+          "text": "do…while"
+        },
+        {
+          "label": "গ",
+          "text": "for"
+        },
+        {
+          "label": "ঘ",
+          "text": "কোনোটিই নয়"
+        }
+      ],
+      "answer": "খ"
+    },
+    {
+      "chapter": 0,
+      "number": 10,
+      "question": "Algorithm-এর বৈশিষ্ট্য কোনটি?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "অস্পষ্ট নির্দে শ"
+        },
+        {
+          "label": "খ",
+          "text": "অসীম ধাপ"
+        },
+        {
+          "label": "গ",
+          "text": "শুধু ছবি"
+        },
+        {
+          "label": "ঘ",
+          "text": "সসীম ও স্পষ্ট ধাপ"
+        }
+      ],
+      "answer": "ঘ"
+    },
+    {
+      "chapter": 0,
+      "number": 11,
+      "question": "Database-এর row-কে সাধারণত কী বলে?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "Field"
+        },
+        {
+          "label": "খ",
+          "text": "Schema"
+        },
+        {
+          "label": "গ",
+          "text": "Record"
+        },
+        {
+          "label": "ঘ",
+          "text": "Index"
+        }
+      ],
+      "answer": "গ"
+    },
+    {
+      "chapter": 0,
+      "number": 12,
+      "question": "Foreign Key কী করে?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "সব field encrypt করে"
+        },
+        {
+          "label": "খ",
+          "text": "অন্য টেবিলের key reference করে"
+        },
+        {
+          "label": "গ",
+          "text": "row sort করে"
+        },
+        {
+          "label": "ঘ",
+          "text": "HTML তৈরি করে"
+        }
+      ],
+      "answer": "খ"
+    },
+    {
+      "chapter": 0,
+      "number": 13,
+      "question": "SQL-এ data retrieve করতে কোন command?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "DROP"
+        },
+        {
+          "label": "খ",
+          "text": "UPDATE"
+        },
+        {
+          "label": "গ",
+          "text": "DELETE"
+        },
+        {
+          "label": "ঘ",
+          "text": "SELECT"
+        }
+      ],
+      "answer": "ঘ"
+    },
+    {
+      "chapter": 0,
+      "number": 14,
+      "question": "Sorting-এর জন্য কোন clause?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "WHERE BY"
+        },
+        {
+          "label": "খ",
+          "text": "SORT TABLE"
+        },
+        {
+          "label": "গ",
+          "text": "ORDER BY"
+        },
+        {
+          "label": "ঘ",
+          "text": "INDEX BY"
+        }
+      ],
+      "answer": "গ"
+    },
+    {
+      "chapter": 0,
+      "number": 15,
+      "question": "SQL Injection প্রতিরোধে কোনটি ভালো?",
+      "options": [
+        {
+          "label": "ক",
+          "text": "Query string-এ user input জোড়া"
+        },
+        {
+          "label": "খ",
+          "text": "plaintext password"
+        },
+        {
+          "label": "গ",
+          "text": "access control বন্ধ"
+        },
+        {
+          "label": "ঘ",
+          "text": "Parameterized query"
+        }
+      ],
+      "answer": "ঘ"
+    }
+  ],
+  "studyPlan": [
+    {
+      "day": 1,
+      "topic": "Internet, WWW, webpage ও website",
+      "task": "১০টি সংজ্ঞা নিজের ভাষায় লিখো।"
+    },
+    {
+      "day": 2,
+      "topic": "Browser, search engine, IP, domain ও DNS",
+      "task": "৫টি পার্থক্য লেখো।"
+    },
+    {
+      "day": 3,
+      "topic": "Website structure, wireframe ও hosting",
+      "task": "নিজের কলেজ সাইটের wireframe আঁকো।"
+    },
+    {
+      "day": 4,
+      "topic": "HTML skeleton, heading ও paragraph",
+      "task": "প্রথম ওয়েবপেজ বানাও।"
+    },
+    {
+      "day": 5,
+      "topic": "Link ও image",
+      "task": "৩ পেজের navigation ও ছবি যোগ করো।"
+    },
+    {
+      "day": 6,
+      "topic": "List ও table",
+      "task": "রুটিনের table ও list বানাও।"
+    },
+    {
+      "day": 7,
+      "topic": "CSS, semantic HTML ও form",
+      "task": "ছোট responsive page বানাও; অধ্যায় ৪ MCQ দাও।"
+    },
+    {
+      "day": 8,
+      "topic": "Computer organization ও CPU",
+      "task": "Diagram এঁকে অংশ ব্যাখ্যা করো।"
+    },
+    {
+      "day": 9,
+      "topic": "Programming language generation",
+      "task": "Language ও translator তুলনা করো।"
+    },
+    {
+      "day": 10,
+      "topic": "Algorithm, pseudocode ও flowchart",
+      "task": "জোড়/বিজোড়ের algorithm ও flowchart তৈরি করো।"
+    },
+    {
+      "day": 11,
+      "topic": "C structure, data type ও variable",
+      "task": "৫টি input-output program লেখো।"
+    },
+    {
+      "day": 12,
+      "topic": "Operator ও if/else",
+      "task": "বড় সংখ্যা ও grade program লেখো।"
+    },
+    {
+      "day": 13,
+      "topic": "Loop",
+      "task": "নামতা, যোগফল ও factorial practice করো।"
+    },
+    {
+      "day": 14,
+      "topic": "Array, function ও debugging",
+      "task": "৩টি program debug করো; অধ্যায় ৫ MCQ দাও।"
+    },
+    {
+      "day": 15,
+      "topic": "Database, DBMS ও table structure",
+      "task": "Student schema তৈরি করো।"
+    },
+    {
+      "day": 16,
+      "topic": "Primary, composite ও foreign key",
+      "task": "সম্পর্কের ERD আঁকো।"
+    },
+    {
+      "day": 17,
+      "topic": "SQL DDL, DML ও DQL",
+      "task": "CREATE, INSERT ও SELECT practice করো।"
+    },
+    {
+      "day": 18,
+      "topic": "JOIN, aggregate ও SQLite",
+      "task": "দুই টেবিলে JOIN চালাও।"
+    },
+    {
+      "day": 19,
+      "topic": "Sorting, indexing ও security",
+      "task": "১০টি সংক্ষিপ্ত উত্তর লেখো।"
+    },
+    {
+      "day": 20,
+      "topic": "সব অধ্যায়ের CQ",
+      "task": "সময় ধরে ৬টি সৃজনশীল অনুশীলন করো।"
+    },
+    {
+      "day": 21,
+      "topic": "Full model test",
+      "task": "ভুলের তালিকা বানিয়ে দুর্বল অংশ আবার পড়ো।"
+    }
+  ],
+  "practicals": [
+    {
+      "number": 1,
+      "group": "HTML",
+      "title": "প্রথম ওয়েবপেজ",
+      "steps": [
+        "index.html নামে ফাইল তৈরি করো।",
+        "HTML5 skeleton লেখো।",
+        "নিজের নামের heading, পরিচিতির paragraph এবং একটি horizontal line দাও।",
+        "Browser-এ খুলে দেখো।",
+        "title ও heading-এর পার্থক্য লিখো।"
+      ]
+    },
+    {
+      "number": 2,
+      "group": "HTML",
+      "title": "লিংক ও নেভিগেশন",
+      "steps": [
+        "index.html, about.html ও contact.html তৈরি করো।",
+        "তিনটি পেজে একই navigation menu রাখো।",
+        "href-এ সঠিক file path দাও।",
+        "ভুল path দিলে কী হয় পরীক্ষা করো।"
+      ]
+    },
+    {
+      "number": 3,
+      "group": "HTML",
+      "title": "ছবি ও বিকল্প লেখা",
+      "steps": [
+        "নিজের অনুমতিপ্রাপ্ত একটি ছবি images folder-এ রাখো।",
+        "img দিয়ে ছবিটি যুক্ত করো।",
+        "অর্থবহ alt লিখো।",
+        "ছবির width পরিবর্তন করো এবং অনুপাত পর্যবেক্ষণ করো।"
+      ]
+    },
+    {
+      "number": 4,
+      "group": "HTML",
+      "title": "তালিকা ও টেবিল",
+      "steps": [
+        "প্রিয় পাঁচটি বই নিয়ে ordered list তৈরি করো।",
+        "প্রয়োজনীয় জিনিস নিয়ে unordered list তৈরি করো।",
+        "৩ শিক্ষার্থীর নাম, রোল ও নম্বর দিয়ে table বানাও।",
+        "thead, tbody, th ও td ব্যবহার করো।"
+      ]
+    },
+    {
+      "number": 5,
+      "group": "HTML",
+      "title": "Semantic HTML ও CSS",
+      "steps": [
+        "header, nav, main, section, article ও footer দিয়ে পেজ বানাও।",
+        "আলাদা style.css ফাইলে font, background, spacing ও responsive layout সেট করো।",
+        "৩২০px চওড়া screen-এ horizontal scrolling হচ্ছে কি না দেখো।"
+      ]
+    },
+    {
+      "number": 6,
+      "group": "HTML",
+      "title": "Form ও Accessibility",
+      "steps": [
+        "নাম, email, message ও submit button-সহ form বানাও।",
+        "প্রতিটি input-এর সঙ্গে label যুক্ত করো।",
+        "প্রয়োজনীয় field-এ required দাও।",
+        "label ছাড়া এবং label-সহ form keyboard দিয়ে ব্যবহার করে তুলনা করো।"
+      ]
+    },
+    {
+      "number": 7,
+      "group": "C",
+      "title": "Input/Output ও যোগ",
+      "steps": [
+        "দুটি integer input নিয়ে যোগফল দেখাও।",
+        "subtraction, multiplication ও division যোগ করো।",
+        "Division-এর আগে divisor শূন্য কি না পরীক্ষা করো।"
+      ]
+    },
+    {
+      "number": 8,
+      "group": "C",
+      "title": "শর্ত দিয়ে বড় সংখ্যা",
+      "steps": [
+        "তিনটি সংখ্যা input নাও।",
+        "সবচেয়ে বড় সংখ্যা বের করো।",
+        "অন্তত দুইটি সংখ্যা সমান হলে কী হয় পরীক্ষা করো।"
+      ]
+    },
+    {
+      "number": 9,
+      "group": "C",
+      "title": "Loop ও নামতা",
+      "steps": [
+        "একটি সংখ্যা input নাও।",
+        "১ থেকে ১০ পর্যন্ত নামতা দেখাও।",
+        "while loop দিয়ে একই কাজ করো।"
+      ]
+    },
+    {
+      "number": 10,
+      "group": "C",
+      "title": "Array ও Function",
+      "steps": [
+        "৫টি নম্বর array-তে রাখো।",
+        "function ব্যবহার করে মোট ও গড় বের করো।",
+        "Function-এ parameter ও return value ব্যবহার করো।"
+      ]
+    },
+    {
+      "number": 11,
+      "group": "Database",
+      "title": "Student Database",
+      "steps": [
+        "Student table তৈরি করে অন্তত ৫ জন শিক্ষার্থীর তথ্য যোগ করো।",
+        "SELECT, WHERE, ORDER BY, UPDATE ও DELETE চালাও।",
+        "কোনো record মুছার আগে একই WHERE-এর SELECT দিয়ে যাচাই করো।"
+      ]
+    },
+    {
+      "number": 12,
+      "group": "Database",
+      "title": "দুই টেবিলের সম্পর্ক",
+      "steps": [
+        "Department ও Student table তৈরি করো।",
+        "Foreign Key যুক্ত করো।",
+        "JOIN দিয়ে শিক্ষার্থীর নামের পাশে বিভাগের নাম দেখাও।",
+        "ON DELETE policy অনুযায়ী parent/child record-এর আচরণ পরীক্ষা করো।"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "title": "অধ্যায় ৪ — সংক্ষিপ্ত ও অনুধাবনমূলক প্রশ্ন",
+      "pages": "৮–৯"
+    },
+    {
+      "title": "অধ্যায় ৪ — বোর্ড-ধাঁচের প্রশ্ন ও MCQ",
+      "pages": "৯–১১"
+    },
+    {
+      "title": "অধ্যায় ৫ — সংক্ষিপ্ত, অনুধাবন ও বোর্ড-ধাঁচের প্রশ্ন",
+      "pages": "১৭–১৯"
+    },
+    {
+      "title": "অধ্যায় ৫ — MCQ",
+      "pages": "১৯–২০"
+    },
+    {
+      "title": "অধ্যায় ৬ — সংক্ষিপ্ত, অনুধাবন ও বোর্ড-ধাঁচের প্রশ্ন",
+      "pages": "২৫–২৭"
+    },
+    {
+      "title": "অধ্যায় ৬ — MCQ",
+      "pages": "২৭–২৮"
+    },
+    {
+      "title": "সমাধানসহ ৬টি সৃজনশীল মডেল প্রশ্ন",
+      "pages": "২৯–৩৩"
+    },
+    {
+      "title": "১২টি ব্যবহারিক Lab",
+      "pages": "৩৪–৩৫"
+    },
+    {
+      "title": "পূর্ণাঙ্গ ৫০ নম্বরের Model Test ও উত্তর কৌশল",
+      "pages": "৩৬–৩৯"
+    },
+    {
+      "title": "২১ দিনের পড়ার পরিকল্পনা ও শব্দকোষ",
+      "pages": "৩৯–৪১"
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+export type Language = {
+  slug: string;
+  name: string;
+  short: string;
+  category: string;
+  description: string;
+  color: string;
+  level: string;
+  useCases: string[];
+  roadmap: string[];
+  firstSnippet: string;
+  tagline: string;
+};
+
+export const categories = [
+  "All topics",
+  "Web development",
+  "General purpose",
+  "Systems & performance",
+  "Mobile development",
+  "Data & databases",
+  "Scripting & automation",
+  "Functional programming",
+];
+
+export const languages: Language[] = [
+  {
+    slug: "python", name: "Python", short: "Py", category: "General purpose",
+    description: "A friendly, powerful language for automation, data, AI, and backend development.",
+    color: "#3978b8", level: "Beginner friendly", tagline: "Start simple. Build powerful things.",
+    useCases: ["Automation", "Data science", "AI & machine learning", "Backend development"],
+    roadmap: ["Getting started & setup", "Variables, values & types", "Conditions and loops", "Functions and modules", "Lists, dictionaries & sets", "Files, errors & packages", "Object-oriented programming", "Build practical projects"],
+    firstSnippet: 'print("Hello, world!")',
+  },
+  {
+    slug: "javascript", name: "JavaScript", short: "JS", category: "Web development",
+    description: "The language that brings websites to life, from interactive pages to full-stack apps.",
+    color: "#b38a13", level: "Beginner friendly", tagline: "Make the web interactive.",
+    useCases: ["Interactive websites", "Web apps", "Servers with Node.js", "Browser games"],
+    roadmap: ["How JavaScript works", "Variables and data types", "Operators and conditions", "Loops and functions", "Arrays and objects", "DOM and browser events", "Async JavaScript", "Modern JavaScript projects"],
+    firstSnippet: 'console.log("Hello, world!");',
+  },
+  {
+    slug: "html", name: "HTML", short: "5", category: "Web development",
+    description: "The foundation of every web page: structure content with meaningful elements.",
+    color: "#df6b37", level: "Beginner friendly", tagline: "Give every website its structure.",
+    useCases: ["Web page structure", "Forms", "Accessible content", "Email templates"],
+    roadmap: ["How the web works", "Elements and attributes", "Headings, text & links", "Images, audio & video", "Lists and tables", "Forms and inputs", "Semantic HTML", "Accessibility basics"],
+    firstSnippet: '<h1>Hello, world!</h1>',
+  },
+  {
+    slug: "css", name: "CSS", short: "#", category: "Web development",
+    description: "Style web pages with layouts, typography, motion, and responsive design.",
+    color: "#397bd7", level: "Beginner friendly", tagline: "Turn structure into an experience.",
+    useCases: ["Web design", "Responsive layouts", "Animations", "Design systems"],
+    roadmap: ["Selectors and cascade", "Colors, units & typography", "Box model", "Flexbox layouts", "CSS Grid", "Responsive design", "Transitions & animation", "Organize a design system"],
+    firstSnippet: 'h1 { color: rebeccapurple; }',
+  },
+  {
+    slug: "typescript", name: "TypeScript", short: "TS", category: "Web development",
+    description: "Add dependable types to JavaScript and build maintainable applications at scale.",
+    color: "#3178c6", level: "Some JavaScript helps", tagline: "JavaScript, with more confidence.",
+    useCases: ["Large web apps", "Frontend frameworks", "APIs", "Shared codebases"],
+    roadmap: ["Types and annotations", "Primitive & union types", "Objects and interfaces", "Functions and generics", "Narrowing and inference", "Modules and configuration", "Type-safe APIs", "Build a typed project"],
+    firstSnippet: 'const greeting: string = "Hello, world!";',
+  },
+  {
+    slug: "java", name: "Java", short: "Ja", category: "General purpose",
+    description: "A widely used, class-based language for enterprise software, Android, and backend systems.",
+    color: "#d86b34", level: "Beginner friendly", tagline: "Learn the foundations of robust software.",
+    useCases: ["Enterprise apps", "Backend services", "Android foundations", "Big data tools"],
+    roadmap: ["JDK, JVM & first program", "Variables and data types", "Conditions and loops", "Methods and arrays", "Classes and objects", "Inheritance and interfaces", "Collections and exceptions", "Build a console application"],
+    firstSnippet: 'System.out.println("Hello, world!");',
+  },
+  {
+    slug: "c", name: "C", short: "C", category: "Systems & performance",
+    description: "Understand memory, data, and the fundamentals behind operating systems and tools.",
+    color: "#5d78a5", level: "Beginner friendly", tagline: "Understand what happens under the hood.",
+    useCases: ["Embedded systems", "Operating systems", "Device drivers", "High-performance tools"],
+    roadmap: ["Compiler and first program", "Variables and operators", "Conditions and loops", "Functions and scope", "Arrays and strings", "Pointers and memory", "Structs and files", "Build a small utility"],
+    firstSnippet: '#include <stdio.h>\nint main(void) {\n  printf("Hello, world!\\n");\n  return 0;\n}',
+  },
+  {
+    slug: "cpp", name: "C++", short: "C++", category: "Systems & performance",
+    description: "A high-performance language for systems, games, simulations, and demanding applications.",
+    color: "#4d6db2", level: "Beginner friendly", tagline: "Performance with powerful abstractions.",
+    useCases: ["Game engines", "Systems software", "Competitive programming", "Simulation"],
+    roadmap: ["Compiler and first program", "Types, variables & operators", "Conditions and loops", "Functions and references", "Classes and objects", "STL containers", "Memory and modern C++", "Build a practical project"],
+    firstSnippet: '#include <iostream>\nint main() {\n  std::cout << "Hello, world!\\n";\n}',
+  },
+  {
+    slug: "c-sharp", name: "C#", short: "C#", category: "General purpose",
+    description: "A modern language for .NET apps, games with Unity, desktop tools, and web services.",
+    color: "#7254a7", level: "Beginner friendly", tagline: "Create apps across platforms.",
+    useCases: [".NET applications", "Unity games", "Web APIs", "Desktop software"],
+    roadmap: [".NET and first project", "Variables and types", "Conditions and loops", "Methods and collections", "Classes and objects", "LINQ and async", "Error handling", "Build an application"],
+    firstSnippet: 'Console.WriteLine("Hello, world!");',
+  },
+  {
+    slug: "go", name: "Go", short: "Go", category: "Systems & performance",
+    description: "A straightforward compiled language designed for dependable tools and network services.",
+    color: "#2c9cb0", level: "Some basics help", tagline: "Simple code. Efficient services.",
+    useCases: ["Cloud services", "Command-line tools", "Networking", "Backend systems"],
+    roadmap: ["Go toolchain and packages", "Variables and types", "Control flow", "Functions and methods", "Structs and interfaces", "Slices and maps", "Goroutines and channels", "Build a web service"],
+    firstSnippet: 'package main\nimport "fmt"\nfunc main() { fmt.Println("Hello, world!") }',
+  },
+  {
+    slug: "rust", name: "Rust", short: "Rs", category: "Systems & performance",
+    description: "A systems language focused on speed, reliability, and memory safety.",
+    color: "#9a6744", level: "Some programming helps", tagline: "Fast software, with safety built in.",
+    useCases: ["Systems programming", "WebAssembly", "Command-line tools", "Reliable services"],
+    roadmap: ["Cargo and first program", "Variables and ownership", "References and borrowing", "Structs and enums", "Pattern matching", "Error handling", "Traits and generics", "Build a command-line tool"],
+    firstSnippet: 'fn main() {\n    println!("Hello, world!");\n}',
+  },
+  {
+    slug: "php", name: "PHP", short: "php", category: "Web development",
+    description: "A server-side language used to power websites, content platforms, and web applications.",
+    color: "#747bb2", level: "Beginner friendly", tagline: "Build dynamic websites from the server side.",
+    useCases: ["Dynamic websites", "WordPress", "APIs", "E-commerce"],
+    roadmap: ["Setup and PHP syntax", "Variables and types", "Conditions and loops", "Functions and arrays", "Forms and validation", "Sessions and files", "Databases with PDO", "Build a small web app"],
+    firstSnippet: '<?php\necho "Hello, world!";\n?>',
+  },
+  {
+    slug: "ruby", name: "Ruby", short: "Rb", category: "General purpose",
+    description: "An expressive language known for its readable syntax and productive web framework ecosystem.",
+    color: "#b94c5b", level: "Beginner friendly", tagline: "Readable code that gets things done.",
+    useCases: ["Web apps", "Automation", "Scripting", "Prototyping"],
+    roadmap: ["Ruby setup and syntax", "Variables and objects", "Conditions and loops", "Methods and blocks", "Arrays and hashes", "Classes and modules", "Files and gems", "Build a small app"],
+    firstSnippet: 'puts "Hello, world!"',
+  },
+  {
+    slug: "swift", name: "Swift", short: "Sw", category: "Mobile development",
+    description: "Apple's modern language for building apps across iPhone, iPad, Mac, and more.",
+    color: "#e47b43", level: "Beginner friendly", tagline: "Build for the Apple ecosystem.",
+    useCases: ["iOS apps", "macOS apps", "Apple platforms", "Server-side Swift"],
+    roadmap: ["Swift basics and playgrounds", "Constants and variables", "Types and optionals", "Control flow", "Functions and closures", "Structs, classes & enums", "Protocols and error handling", "Build an app interface"],
+    firstSnippet: 'print("Hello, world!")',
+  },
+  {
+    slug: "kotlin", name: "Kotlin", short: "Kt", category: "Mobile development",
+    description: "A concise, expressive language for Android development and modern multiplatform projects.",
+    color: "#8b65c6", level: "Beginner friendly", tagline: "A modern way to build Android apps.",
+    useCases: ["Android apps", "Backend services", "Multiplatform apps", "JVM projects"],
+    roadmap: ["Kotlin setup and syntax", "Variables and types", "Conditions and loops", "Functions and lambdas", "Collections", "Classes and data classes", "Null safety and coroutines", "Build a small app"],
+    firstSnippet: 'fun main() {\n    println("Hello, world!")\n}',
+  },
+  {
+    slug: "dart", name: "Dart", short: "Da", category: "Mobile development",
+    description: "A client-optimized language commonly used with Flutter for cross-platform interfaces.",
+    color: "#287fbd", level: "Beginner friendly", tagline: "One codebase. Multiple platforms.",
+    useCases: ["Flutter apps", "Mobile interfaces", "Web apps", "Desktop apps"],
+    roadmap: ["Dart setup and syntax", "Variables and types", "Collections", "Functions and classes", "Null safety", "Async programming", "Packages and tooling", "Build a Flutter-ready project"],
+    firstSnippet: 'void main() {\n  print("Hello, world!");\n}',
+  },
+  {
+    slug: "sql", name: "SQL", short: "SQL", category: "Data & databases",
+    description: "Ask questions of structured data and work with relational databases.",
+    color: "#2f8b83", level: "Beginner friendly", tagline: "Make data answer your questions.",
+    useCases: ["Data analysis", "Application databases", "Reporting", "Data engineering"],
+    roadmap: ["Tables, rows and columns", "SELECT and filtering", "Sorting and grouping", "Joins and relationships", "INSERT, UPDATE and DELETE", "Subqueries and CTEs", "Indexes and constraints", "Query a sample database"],
+    firstSnippet: 'SELECT "Hello, world!" AS greeting;',
+  },
+  {
+    slug: "r", name: "R", short: "R", category: "Data & databases",
+    description: "A language and environment designed for statistics, data analysis, and visualization.",
+    color: "#3d7ab6", level: "Beginner friendly", tagline: "Explore data and communicate insights.",
+    useCases: ["Statistics", "Data visualization", "Research", "Reporting"],
+    roadmap: ["R and RStudio setup", "Vectors and data types", "Data frames", "Import and clean data", "Functions and packages", "Visualization with ggplot2", "Statistical foundations", "Create a data report"],
+    firstSnippet: 'print("Hello, world!")',
+  },
+  {
+    slug: "julia", name: "Julia", short: "Jl", category: "Data & databases",
+    description: "A high-performance language for scientific computing, numerical work, and research.",
+    color: "#8b70a8", level: "Some basics help", tagline: "Scientific computing without the compromise.",
+    useCases: ["Numerical computing", "Scientific research", "Optimization", "Data science"],
+    roadmap: ["Julia setup and REPL", "Types and dispatch", "Arrays and collections", "Functions and multiple dispatch", "Packages and environments", "Plotting and data", "Performance basics", "Build a numerical project"],
+    firstSnippet: 'println("Hello, world!")',
+  },
+  {
+    slug: "bash", name: "Bash", short: "$_", category: "Scripting & automation",
+    description: "Automate everyday command-line work with shell scripts and powerful text tools.",
+    color: "#477e5c", level: "Beginner friendly", tagline: "Automate the work you repeat.",
+    useCases: ["Linux and macOS", "DevOps workflows", "Automation", "System administration"],
+    roadmap: ["Terminal and shell basics", "Commands and paths", "Variables and quoting", "Conditions and loops", "Functions and arguments", "Pipes and redirection", "Files and permissions", "Write an automation script"],
+    firstSnippet: 'echo "Hello, world!"',
+  },
+  {
+    slug: "powershell", name: "PowerShell", short: "PS", category: "Scripting & automation",
+    description: "A cross-platform shell and scripting language for managing systems and workflows.",
+    color: "#3277a8", level: "Beginner friendly", tagline: "Manage systems with repeatable scripts.",
+    useCases: ["Windows administration", "Cloud automation", "DevOps", "IT operations"],
+    roadmap: ["Shell and commands", "Objects and pipelines", "Variables and types", "Conditions and loops", "Functions and parameters", "Files and processes", "Modules and remoting", "Automate a real task"],
+    firstSnippet: 'Write-Output "Hello, world!"',
+  },
+  {
+    slug: "lua", name: "Lua", short: "Lu", category: "Scripting & automation",
+    description: "A lightweight scripting language often embedded in games, tools, and applications.",
+    color: "#536ea7", level: "Beginner friendly", tagline: "Small language, flexible possibilities.",
+    useCases: ["Game scripting", "Embedded scripting", "Configuration", "Automation"],
+    roadmap: ["Lua setup and syntax", "Values and tables", "Conditions and loops", "Functions and closures", "Modules and metatables", "Coroutines", "Embedding concepts", "Build a small script"],
+    firstSnippet: 'print("Hello, world!")',
+  },
+  {
+    slug: "perl", name: "Perl", short: "Pl", category: "Scripting & automation",
+    description: "A flexible scripting language known for text processing and system automation.",
+    color: "#477da7", level: "Some basics help", tagline: "Turn messy text into useful results.",
+    useCases: ["Text processing", "System scripts", "Log analysis", "Automation"],
+    roadmap: ["Perl setup and syntax", "Scalars, arrays and hashes", "Conditions and loops", "Regular expressions", "Subroutines", "Files and modules", "References", "Build a text-processing tool"],
+    firstSnippet: 'print "Hello, world!\\n";',
+  },
+  {
+    slug: "scala", name: "Scala", short: "Sc", category: "Functional programming",
+    description: "A JVM language blending object-oriented and functional programming for scalable systems.",
+    color: "#b64d56", level: "Some programming helps", tagline: "Combine functional ideas with the JVM.",
+    useCases: ["Data platforms", "Backend systems", "Functional programming", "Distributed systems"],
+    roadmap: ["Scala and sbt setup", "Values and expressions", "Collections and pattern matching", "Functions and higher-order methods", "Classes and traits", "Options and error handling", "Concurrency basics", "Build a small service"],
+    firstSnippet: 'object Main extends App {\n  println("Hello, world!")\n}',
+  },
+  {
+    slug: "haskell", name: "Haskell", short: "Hs", category: "Functional programming",
+    description: "A purely functional language that teaches powerful ideas about types and composition.",
+    color: "#72569d", level: "Some programming helps", tagline: "Learn to think in functions.",
+    useCases: ["Functional programming", "Language research", "Compilers", "Reliable systems"],
+    roadmap: ["GHC and first program", "Expressions and types", "Lists and recursion", "Higher-order functions", "Algebraic data types", "Pattern matching", "Functors and monads", "Build a small program"],
+    firstSnippet: 'main = putStrLn "Hello, world!"',
+  },
+  {
+    slug: "elixir", name: "Elixir", short: "Ex", category: "Functional programming",
+    description: "A functional language built for concurrent, fault-tolerant applications on the BEAM VM.",
+    color: "#8a68a6", level: "Some programming helps", tagline: "Build systems that stay responsive.",
+    useCases: ["Real-time applications", "Distributed systems", "Web services", "Messaging"],
+    roadmap: ["Elixir and Mix setup", "Basic types and pattern matching", "Functions and modules", "Collections and Enum", "Processes and messages", "OTP fundamentals", "Phoenix introduction", "Build a real-time feature"],
+    firstSnippet: 'IO.puts("Hello, world!")',
+  },
+  {
+    slug: "assembly", name: "Assembly", short: "ASM", category: "Systems & performance",
+    description: "Explore instructions, registers, memory, and the machine-level view of computing.",
+    color: "#68748c", level: "Advanced foundations", tagline: "See how software speaks to hardware.",
+    useCases: ["Computer architecture", "Embedded systems", "Reverse engineering", "Low-level optimization"],
+    roadmap: ["Binary and number systems", "CPU, registers and memory", "Instruction sets", "Addressing modes", "Stack and calling conventions", "Branches and loops", "System calls", "Read and write a small program"],
+    firstSnippet: '; Example syntax varies by CPU architecture\nsection .data\n  message db "Hello, world!", 10',
+  },
+  {
+    slug: "objective-c", name: "Objective-C", short: "ObjC", category: "Mobile development",
+    description: "A C-based language historically used across Apple software and still found in legacy projects.",
+    color: "#55799b", level: "Some C knowledge helps", tagline: "Understand a major part of Apple's software history.",
+    useCases: ["Legacy iOS apps", "macOS software", "Apple frameworks", "Maintaining existing code"],
+    roadmap: ["Objective-C syntax", "Messages and objects", "Classes and methods", "Properties and memory", "Collections", "Protocols and categories", "Foundation framework", "Read and update an existing app"],
+    firstSnippet: '#import <Foundation/Foundation.h>\nNSLog(@"Hello, world!");',
+  },
+  {
+    slug: "ocaml", name: "OCaml", short: "ML", category: "Functional programming",
+    description: "A practical functional language with a strong type system and expressive pattern matching.",
+    color: "#c47a40", level: "Some programming helps", tagline: "Build confidence with expressive types.",
+    useCases: ["Compilers", "Developer tools", "Formal methods", "Functional applications"],
+    roadmap: ["OCaml setup and REPL", "Values and functions", "Lists and recursion", "Pattern matching", "Variants and records", "Modules and functors", "Error handling", "Build a small parser"],
+    firstSnippet: 'print_endline "Hello, world!";;',
+  },
+  {
+    slug: "fortran", name: "Fortran", short: "F", category: "Systems & performance",
+    description: "A long-standing compiled language used in numerical and scientific computing.",
+    color: "#6c7aab", level: "Some programming helps", tagline: "Power scientific and numerical workloads.",
+    useCases: ["Scientific computing", "Weather models", "High-performance computing", "Numerical simulation"],
+    roadmap: ["Compiler and source structure", "Variables and types", "Expressions and control flow", "Arrays and procedures", "Modules", "File input and output", "Numerical methods", "Build a small simulation"],
+    firstSnippet: 'program hello\n  print *, "Hello, world!"\nend program hello',
+  },
+];
+
+export function getLanguage(slug: string) {
+  return languages.find((language) => language.slug === slug);
+}

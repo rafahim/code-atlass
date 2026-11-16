@@ -1,0 +1,635 @@
+{
+  "chapterMappings": {
+    "computer-basics": [
+      "computer-basics",
+      "problem-solving",
+      "24-week-learning-plan"
+    ],
+    "html-css": [
+      "html",
+      "css"
+    ],
+    "c-cpp": [
+      "c",
+      "cpp"
+    ],
+    "javascript-typescript": [
+      "javascript",
+      "typescript"
+    ],
+    "python": [
+      "python"
+    ],
+    "sql-sqlite": [
+      "sql",
+      "sqlite"
+    ],
+    "git-api-testing-security": [
+      "git-github",
+      "web-http-api",
+      "debugging-testing-security"
+    ]
+  },
+  "questions": [
+    {
+      "group": "computer-basics",
+      "number": 1,
+      "question": "প্রোগ্রাম কী?",
+      "answer": "কম্পিউটারকে কাজ করানোর জন্য সাজানো নির্দেশনার সমষ্টি।"
+    },
+    {
+      "group": "computer-basics",
+      "number": 2,
+      "question": "Algorithm কী?",
+      "answer": "কোনো সমস্যা সমাধানের সুনির্দিষ্ট ধাপসমূহ।"
+    },
+    {
+      "group": "computer-basics",
+      "number": 3,
+      "question": "Compiler ও Interpreter-এর পার্থক্য?",
+      "answer": "Compiler সাধারণত source code থেকে আগে executable/অন্য representation তৈরি করে; interpreter runtime-এ নির্দেশনা execute করে। বাস্তবে JIT/মিশ্র পদ্ধতিও আছে।"
+    },
+    {
+      "group": "computer-basics",
+      "number": 4,
+      "question": "Bug কী?",
+      "answer": "প্রোগ্রামের ত্রুটি, যা ভুল ফল বা crash ঘটায়।"
+    },
+    {
+      "group": "computer-basics",
+      "number": 5,
+      "question": "Debugging কী?",
+      "answer": "bug পুনরুৎপাদন, কারণ খোঁজা, সংশোধন ও পুনরায় পরীক্ষা।"
+    },
+    {
+      "group": "computer-basics",
+      "number": 6,
+      "question": "Variable কী?",
+      "answer": "নাম দিয়ে data/reference ব্যবহার করার ব্যবস্থা।"
+    },
+    {
+      "group": "computer-basics",
+      "number": 7,
+      "question": "Data type কেন দরকার?",
+      "answer": "কোন ধরনের data ও কোন operation বৈধ তা নির্ধারণে সাহায্য করে।"
+    },
+    {
+      "group": "computer-basics",
+      "number": 8,
+      "question": "Loop কেন?",
+      "answer": "পুনরাবৃত্ত কাজ একাধিকবার চালাতে।"
+    },
+    {
+      "group": "computer-basics",
+      "number": 9,
+      "question": "Function কেন?",
+      "answer": "কাজ ভাগ, পুনর্ব্যবহার ও test সহজ করতে।"
+    },
+    {
+      "group": "computer-basics",
+      "number": 10,
+      "question": "Edge case কী?",
+      "answer": "সীমান্তবর্তী বা অস্বাভাবিক input, যেমন খালি তালিকা বা শূন্য।"
+    },
+    {
+      "group": "html-css",
+      "number": 11,
+      "question": "HTML কী?",
+      "answer": "ওয়েব content-এর structure/meaning নির্ধারণের markup language।"
+    },
+    {
+      "group": "html-css",
+      "number": 12,
+      "question": "CSS কী?",
+      "answer": "ওয়েবপেজের presentation ও layout নির্ধারণের stylesheet language।"
+    },
+    {
+      "group": "html-css",
+      "number": 13,
+      "question": "Semantic HTML কী?",
+      "answer": "অর্থপূর্ণ element দিয়ে content structure করা, যেমন nav, main, article।"
+    },
+    {
+      "group": "html-css",
+      "number": 14,
+      "question": "Attribute কী?",
+      "answer": "element-এর অতিরিক্ত তথ্য, যেমন href, src, alt।"
+    },
+    {
+      "group": "html-css",
+      "number": 15,
+      "question": "alt কেন?",
+      "answer": "ছবি দেখা না গেলে বা assistive technology ব্যবহার করলে ছবির অর্থ জানাতে।"
+    },
+    {
+      "group": "html-css",
+      "number": 16,
+      "question": "class ও id পার্থক্য?",
+      "answer": "class একাধিক element-এ reuse হয়; id একটি document-এ unique হওয়া উচিত।"
+    },
+    {
+      "group": "html-css",
+      "number": 17,
+      "question": "Box model কী?",
+      "answer": "content, padding, border, margin-এর সমষ্টি।"
+    },
+    {
+      "group": "html-css",
+      "number": 18,
+      "question": "Flexbox কখন?",
+      "answer": "এক অক্ষে item সাজানো ও alignment-এ।"
+    },
+    {
+      "group": "html-css",
+      "number": 19,
+      "question": "Grid কখন?",
+      "answer": "সারি ও কলামভিত্তিক দ্বিমাত্রিক layout-এ।"
+    },
+    {
+      "group": "html-css",
+      "number": 20,
+      "question": "Media query কী?",
+      "answer": "viewport/feature অনুযায়ী CSS rule প্রয়োগ।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 21,
+      "question": "C কেন শেখা হয়?",
+      "answer": "memory, pointer, compilation ও low-level ধারণা বুঝতে।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 22,
+      "question": "int ও float পার্থক্য?",
+      "answer": "int পূর্ণসংখ্যা; float floating-point number।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 23,
+      "question": "= ও == পার্থক্য?",
+      "answer": "= assignment; == equality comparison।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 24,
+      "question": "Array index কোথা থেকে?",
+      "answer": "C/C++/JavaScript/Python-এর সাধারণ array/list indexing ০ থেকে শুরু।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 25,
+      "question": "Pointer কী?",
+      "answer": "memory address ধারণকারী variable।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 26,
+      "question": "NULL pointer কী?",
+      "answer": "কোনো বৈধ object-কে নির্দেশ করে না এমন pointer value।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 27,
+      "question": "Memory leak কী?",
+      "answer": "আর দরকার নেই এমন allocated memory release না করা।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 28,
+      "question": "struct কী?",
+      "answer": "একাধিক field এক user-defined type-এ রাখে।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 29,
+      "question": "C++ class কী?",
+      "answer": "data ও method-সহ user-defined type/blueprint।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 30,
+      "question": "Encapsulation কী?",
+      "answer": "data ও আচরণ একসঙ্গে রাখা এবং controlled interface দিয়ে access দেওয়া।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 31,
+      "question": "Inheritance কী?",
+      "answer": "derived type base type-এর interface/behavior থেকে সুবিধা নেয়।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 32,
+      "question": "Polymorphism কী?",
+      "answer": "একই interface দিয়ে ভিন্ন implementation ব্যবহার।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 33,
+      "question": "STL কী?",
+      "answer": "C++ Standard Template Library-এর container, algorithm ও utility collection।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 34,
+      "question": "RAII কী?",
+      "answer": "object lifetime-এর সঙ্গে resource acquire/release যুক্ত রাখা।"
+    },
+    {
+      "group": "c-cpp",
+      "number": 35,
+      "question": "Smart pointer কেন?",
+      "answer": "ownership ও memory cleanup স্বয়ংক্রিয়ভাবে পরিচালনায়।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 36,
+      "question": "JavaScript কোথায় চলে?",
+      "answer": "Browser-এ এবং Node.js-সহ বিভিন্ন runtime-এ।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 37,
+      "question": "let ও const পার্থক্য?",
+      "answer": "let reassign করা যায়; const binding reassign করা যায় না।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 38,
+      "question": "== ও === পার্থক্য?",
+      "answer": "== coercion করতে পারে; === type-সহ strict comparison।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 39,
+      "question": "DOM কী?",
+      "answer": "HTML document-এর object model, যা script দিয়ে পড়া/বদলানো যায়।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 40,
+      "question": "Event listener কী?",
+      "answer": "নির্দিষ্ট event ঘটলে callback চালায়।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 41,
+      "question": "Callback কী?",
+      "answer": "অন্য function-এ argument হিসেবে দেওয়া function।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 42,
+      "question": "Promise কী?",
+      "answer": "ভবিষ্যতে সফল value বা failure উপস্থাপন করে।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 43,
+      "question": "async/await কী?",
+      "answer": "Promise-ভিত্তিক asynchronous code আরও পাঠযোগ্যভাবে লেখার syntax।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 44,
+      "question": "fetch-এর response.ok কেন দেখি?",
+      "answer": "HTTP 4xx/5xx সাধারণত fetch reject করে না; status আলাদা করে পরীক্ষা দরকার।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 45,
+      "question": "Closure কী?",
+      "answer": "function তার outer lexical scope-এর variable মনে রাখে।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 46,
+      "question": "localStorage কী?",
+      "answer": "browser-এর origin-ভিত্তিক persistent string storage।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 47,
+      "question": "TypeScript কী?",
+      "answer": "JavaScript-এর superset, static type checking যোগ করে।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 48,
+      "question": "any ও unknown পার্থক্য?",
+      "answer": "any type checking bypass করে; unknown ব্যবহার করার আগে narrow করতে হয়।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 49,
+      "question": "interface কী?",
+      "answer": "object-এর shape/contract বর্ণনা করে।"
+    },
+    {
+      "group": "javascript-typescript",
+      "number": 50,
+      "question": "Generic কী?",
+      "answer": "type parameter দিয়ে reusable type/function তৈরি।"
+    },
+    {
+      "group": "python",
+      "number": 51,
+      "question": "Python indentation কেন জরুরি?",
+      "answer": "indentation block structure নির্ধারণ করে।"
+    },
+    {
+      "group": "python",
+      "number": 52,
+      "question": "List ও tuple পার্থক্য?",
+      "answer": "list mutable; tuple immutable sequence।"
+    },
+    {
+      "group": "python",
+      "number": 53,
+      "question": "Set কেন?",
+      "answer": "unique value রাখা ও membership/duplicate check-এ।"
+    },
+    {
+      "group": "python",
+      "number": 54,
+      "question": "Dictionary কী?",
+      "answer": "key-value mapping।"
+    },
+    {
+      "group": "python",
+      "number": 55,
+      "question": "f-string কী?",
+      "answer": "string-এর মধ্যে expression বসানোর formatting syntax।"
+    },
+    {
+      "group": "python",
+      "number": 56,
+      "question": "None কী?",
+      "answer": "কোনো value নেই/অনুপস্থিত বোঝানোর singleton value।"
+    },
+    {
+      "group": "python",
+      "number": 57,
+      "question": "Exception কেন ধরব?",
+      "answer": "প্রত্যাশিত failure সামলে পরিষ্কার আচরণ দিতে।"
+    },
+    {
+      "group": "python",
+      "number": 58,
+      "question": "with কেন?",
+      "answer": "file-এর মতো resource ব্যবহারের পর cleanup নিশ্চিত করতে।"
+    },
+    {
+      "group": "python",
+      "number": 59,
+      "question": "Virtual environment কেন?",
+      "answer": "project dependency আলাদা রাখতে।"
+    },
+    {
+      "group": "python",
+      "number": 60,
+      "question": "Generator কী?",
+      "answer": "yield দিয়ে ধাপে ধাপে value দেয়; memory দক্ষ হতে পারে।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 61,
+      "question": "SQL কী?",
+      "answer": "relational database-এ data কাজের declarative language।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 62,
+      "question": "Primary key কী?",
+      "answer": "প্রতিটি row uniqueভাবে শনাক্ত করে।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 63,
+      "question": "Foreign key কী?",
+      "answer": "অন্য table-এর key reference করে relation/integrity রাখে।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 64,
+      "question": "UNIQUE constraint কী?",
+      "answer": "নির্দিষ্ট column/value combination duplicate হতে বাধা দেয়।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 65,
+      "question": "NULL কী?",
+      "answer": "value অনুপস্থিত/অজানা; শূন্য বা empty string নয়।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 66,
+      "question": "WHERE ও HAVING পার্থক্য?",
+      "answer": "WHERE row filter; HAVING group/aggregate filter।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 67,
+      "question": "INNER JOIN কী?",
+      "answer": "দুই table-এ matching row ফিরিয়ে দেয়।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 68,
+      "question": "LEFT JOIN কী?",
+      "answer": "বাম table-এর সব row এবং ডানে match থাকলে data।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 69,
+      "question": "GROUP BY কেন?",
+      "answer": "একই বৈশিষ্ট্যের row group করে aggregate হিসাব করতে।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 70,
+      "question": "Index কী?",
+      "answer": "search/order/join দ্রুত করতে database-এর অতিরিক্ত data structure।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 71,
+      "question": "Index-এর অসুবিধা?",
+      "answer": "storage লাগে এবং write operation ধীর হতে পারে।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 72,
+      "question": "Transaction কী?",
+      "answer": "একাধিক operation-কে একটি atomic কাজ হিসেবে চালানো।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 73,
+      "question": "ACID কী?",
+      "answer": "Atomicity, Consistency, Isolation, Durability।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 74,
+      "question": "SQL injection কী?",
+      "answer": "user input দিয়ে malicious SQL structure তৈরি/চালানোর ঝুঁকি।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 75,
+      "question": "Parameterized query কেন?",
+      "answer": "data-কে SQL code থেকে আলাদা রেখে injection প্রতিরোধে।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 76,
+      "question": "SQLite কী?",
+      "answer": "embedded, serverless relational database engine।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 77,
+      "question": "SQLite file-based কেন সুবিধা?",
+      "answer": "deployment ও local storage সহজ।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 78,
+      "question": "SQLite-এ foreign key pragma?",
+      "answer": "connection-এ PRAGMA foreign_keys = ON।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 79,
+      "question": "WAL কী?",
+      "answer": "Write-Ahead Logging journal mode; read/write concurrency-তে সাহায্য করতে পারে।"
+    },
+    {
+      "group": "sql-sqlite",
+      "number": 80,
+      "question": "SQLite সবার জন্য?",
+      "answer": "না; অনেক concurrent writer বা centralized server workload-এ server DB উপযুক্ত হতে পারে।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 81,
+      "question": "Git কী?",
+      "answer": "distributed version control system।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 82,
+      "question": "Commit কী?",
+      "answer": "repository-তে পরিবর্তনের snapshot।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 83,
+      "question": "Branch কেন?",
+      "answer": "মূল কাজ থেকে আলাদা feature/fix-এ কাজ করতে।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 84,
+      "question": "Merge conflict কী?",
+      "answer": "একই অংশে পরিবর্তন স্বয়ংক্রিয়ভাবে একত্র করা যায়নি।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 85,
+      "question": "API কী?",
+      "answer": "software component-গুলোর যোগাযোগের contract/interface।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 86,
+      "question": "HTTP GET কী?",
+      "answer": "resource retrieve করার method; সাধারণত safe ও idempotent।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 87,
+      "question": "POST কী?",
+      "answer": "resource তৈরি বা server-side processing-এর জন্য সাধারণত ব্যবহৃত method।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 88,
+      "question": "401 ও 403 পার্থক্য?",
+      "answer": "401 authentication প্রয়োজন/ব্যর্থ; 403 অনুমতি নেই।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 89,
+      "question": "JSON কী?",
+      "answer": "data interchange format, object/array ও primitive value সমর্থন করে।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 90,
+      "question": "Authentication/Authorization?",
+      "answer": "পরিচয় যাচাই বনাম permission যাচাই।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 91,
+      "question": "Unit test কী?",
+      "answer": "ছোট unit আলাদা পরীক্ষা।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 92,
+      "question": "Integration test কী?",
+      "answer": "একাধিক অংশ একত্রে পরীক্ষা।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 93,
+      "question": "Regression test কেন?",
+      "answer": "নতুন পরিবর্তনে পুরোনো bug ফিরেছে কি না দেখতে।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 94,
+      "question": "XSS কী?",
+      "answer": "browser-এ অনিচ্ছাকৃত script চালানোর ঝুঁকি।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 95,
+      "question": "CSRF কী?",
+      "answer": "logged-in user-এর browser দিয়ে অনিচ্ছাকৃত state-changing request করানোর আক্রমণ।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 96,
+      "question": "Password কীভাবে সংরক্ষণ?",
+      "answer": "Argon2id/bcrypt/scrypt-জাতীয় password hashing ব্যবহার করে; plaintext নয়।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 97,
+      "question": "Secret কোথায় রাখব?",
+      "answer": "environment variable বা secret manager; repository-তে নয়।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 98,
+      "question": "Client validation কি যথেষ্ট?",
+      "answer": "না; server-side validation বাধ্যতামূলক।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 99,
+      "question": "README কেন?",
+      "answer": "setup, run, test, feature ও usage অন্যকে বুঝাতে।"
+    },
+    {
+      "group": "git-api-testing-security",
+      "number": 100,
+      "question": "ভালো programmer-এর জরুরি দক্ষতা?",
+      "answer": "সমস্যা বোঝা, ছোট ধাপে ভাঙা, পরিষ্কার code, পরীক্ষা, ভুল থেকে শেখা এবং documentation পড়ার অভ্যাস।"
+    }
+  ]
+}

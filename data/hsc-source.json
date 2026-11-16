@@ -1,0 +1,342 @@
+{
+  "lessons": [
+    {
+      "chapter": 4,
+      "number": 1,
+      "slug": "lesson-4-1",
+      "title": "ওয়েব, ওয়েবপেজ ও ওয়েবসাইটের ধারণা",
+      "content": "ইন্টারনেট কী?\nইন্টারনেট হলো বিশ্বজুড়ে ছড়িয়ে থাকা অসংখ্য কম্পিউটার ও নেটওয়ার্কের পারস্পরিক সংযোগব্যবস্থা। এর মাধ্যমে\nতথ্য আদান-প্রদান, ই-মেইল, ওয়েবসাইট দেখা, ভিডিও কল, অনলাইন ক্লাস ও কেনাকাটা করা যায়। সহজভাবে,\nইন্টারনেট হলো বড় রাস্তার নেটওয়ার্ক; সেই রাস্তায় তথ্য যাতায়াত করে।\n\nWorld Wide Web (WWW) কী?\nWWW বা ওয়েব হলো ইন্টারনেটের ওপর চলা পরস্পর-লিংকযুক্ত ওয়েবপেজ ও ওয়েব রিসোর্সের ব্যবস্থা।\nইন্টারনেট সংযোগের অবকাঠামো; WWW সেই অবকাঠামো ব্যবহার করে দেখা যায় এমন ওয়েব-তথ্যব্যবস্থা। তাই\nইন্টারনেট ও WWW এক জিনিস নয়।\n\nওয়েবপেজ, ওয়েবসাইট ও হোমপেজ\n  •    ওয়েবপেজ (Webpage): HTML-সহ ওয়েব প্রযুক্তি দিয়ে তৈরি, ব্রাউজারে দেখা যায় এমন একক পৃষ্ঠা। যেমন\n       কোনো প্রতিষ্ঠানের “About Us” পেজ।\n  •    ওয়েবসাইট (Website): একই ডোমেইন বা সংশ্লিষ্ট ঠিকানার অধীনে সাজানো একাধিক ওয়েবপেজ, ফাইল\n       ও রিসোর্সের সমষ্টি। যেমন কলেজের Home, About, Notice, Admission ও Contact পেজ।\n  •    হোমপেজ (Homepage): ওয়েবসাইটের প্রধান বা সূচনাপৃষ্ঠা। এখান থেকে সাধারণত অন্য গুরুত্বপূর্ণ পেজে\n       যাওয়া যায়। হোমপেজ ওয়েবসাইটের একটি পৃষ্ঠা, পুরো ওয়েবসাইট নয়।\n\nওয়েব ব্রাউজার ও সার্চ ইঞ্জিন\n  •    ব্রাউজার: ওয়েবপেজের HTML/CSS/JavaScript ব্যাখ্যা করে ব্যবহারকারীর সামনে প্রদর্শন করে। উদাহরণ:\n       Chrome, Firefox, Edge, Safari।\n\n  •    সার্চ ইঞ্জিন: ওয়েবে তথ্য খুঁজে পেতে সহায়তা করে। উদাহরণ: Google Search, Bing, DuckDuckGo।\n  •    মনে রাখবে: Chrome হলো ব্রাউজার; Google Search হলো সার্চ ইঞ্জিন। Chrome দিয়ে Google Search ব্যবহার\n       করা যায়, কিন্তু দুটির কাজ আলাদা।\n\nওয়েব সার্ভার\nযে কম্পিউটার/সফটওয়্যার HTTP বা HTTPS অনুরোধ গ্রহণ করে ওয়েবপেজ ও অন্যান্য ফাইল সরবরাহ করে\nতাকে ওয়েব সার্ভার বলে। ব্রাউজার অনুরোধ পাঠায়; সার্ভার প্রয়োজনীয় রিসোর্স ফিরিয়ে দেয়।\n\nIP Address, Domain Name, URL ও DNS\n  •    IP Address: নেটওয়ার্কে কোনো ডিভাইস/সার্ভার শনাক্ত করার সংখ্যাভিত্তিক ঠিকানা। IPv4 উদাহরণ:\n       192.0.2.10 (শিক্ষামূলক উদাহরণ)। IPv6 আরও দীর্ঘ এবং হেক্সাডেসিমেল রূপে লেখা হয়।\n\n  •    Domain Name: মানুষের মনে রাখা সহজ ওয়েব-নাম; যেমন example.com।\n\n  •    URL (Uniform Resource Locator): ইন্টারনেটে কোনো নির্দিষ্ট রিসোর্সের অবস্থান/ঠিকানা। যেমন\n       https://example.com/about।\n\n  •    DNS (Domain Name System): ডোমেইন নামের সঙ্গে সংশ্লিষ্ট IP ঠিকানা খুঁজে দিতে সাহায্য করে।\n\n  •    HTTP/HTTPS: ব্রাউজার ও সার্ভারের মধ্যে ওয়েব-তথ্য আদান-প্রদানের প্রোটোকল। HTTPS-এ TLS ব্যবহার\n       করে সংযোগ এনক্রিপ্ট করা হয়।\n\nURL ভেঙে দেখা: https://www.example.com/student/profile?id=5 — https হলো প্রোটোকল/স্কিম,\nwww.example.com হোস্ট/ডোমেইন, /student/profile path এবং ?id=5 query parameter।\n\nডোমেইন নামের অংশ\nwww.school.edu.bd-এ www প্রচলিত সাবডোমেইন/হোস্ট নাম; school নিবন্ধিত নামের অংশ; .edu\nশিক্ষাপ্রতিষ্ঠান-সংশ্লিষ্ট দ্বিতীয়-স্তরের/জেনেরিক অংশ হিসেবে ব্যবহৃত হতে পারে; .bd বাংলাদেশের country-code\ntop-level domain। বাস্তবে ডোমেইনের গঠন নিবন্ধন নীতি অনুযায়ী ভিন্ন হতে পারে। একই DNS নাম একই সময়ে\nএকাধিক স্বতন্ত্র নিবন্ধকের নামে বরাদ্দ করা যায় না, তাই ডোমেইন নাম অনন্য হয়।\n\nওয়েব হোস্টিং ও ওয়েবসাইট পাবলিশিং\nওয়েবসাইটের ফাইল সার্ভারে রেখে ইন্টারনেটের মাধ্যমে ব্যবহারকারীর জন্য উন্মুক্ত করার ব্যবস্থাকে ওয়েব হোস্টিং\nবলে। ডোমেইন হলো নাম/ঠিকানা; হোস্টিং হলো ফাইল রাখার সার্ভার-সেবা। প্রকাশের ধাপ: ১) পেজ তৈরি ও\nপরীক্ষা, ২) ডোমেইন নিবন্ধন/সাবডোমেইন, ৩) হোস্টিং/সার্ভার প্রস্তুত, ৪) DNS সার্ভারের দিকে নির্দেশ, ৫) ফাইল\nআপলোড/ডিপ্লয়, ৬) HTTPS চালু, ৭) বিভিন্ন ডিভাইস ও ব্রাউজারে পরীক্ষা।\n\nনিজেকে যাচাই করো: ইন্টারনেট ও WWW-এর পার্থক্য কী? ওয়েবপেজ ও ওয়েবসাইটের পার্থক্য বলো। ব্রাউজার\nও সার্চ ইঞ্জিনের কাজ আলাদা কেন? DNS কী করে? ডোমেইন ও হোস্টিং কি একই জিনিস?"
+    },
+    {
+      "chapter": 4,
+      "number": 2,
+      "slug": "lesson-4-2",
+      "title": "ওয়েবসাইটের সুবিধা, ধরন ও কাঠামো",
+      "content": "ওয়েবসাইটের সুবিধা\n  •     একই তথ্য বহু মানুষের কাছে দ্রুত পৌঁছে দেওয়া যায়।\n  •     সার্ভিস সচল থাকলে দিন-রাত তথ্য পাওয়া যায়।\n  •     নোটিশ, ফলাফল, পণ্য, সেবা ও যোগাযোগের তথ্য এক জায়গায় রাখা যায়।\n  •     অনলাইন ফর্ম, বুকিং, পেমেন্ট ও শিক্ষাসেবা দেওয়া যায়।\n  •     তথ্য আপডেট করলে নতুন সংস্করণ সবার কাছে পৌঁছানো সহজ হয়।\n\nStatic ও Dynamic Website\nStatic Website: পেজের কনটেন্ট আগে থেকেই ফাইলে লেখা থাকে; ব্যবহারকারীর অনুরোধে একই ধরনের\nপূর্বনির্ধারিত পেজ পাঠানো হয়। ছোট পরিচিতিমূলক সাইটে উপযোগী।\nDynamic Website: ব্যবহারকারী, সময়, ডেটাবেজ বা সার্ভার-লজিক অনুযায়ী কনটেন্ট তৈরি/পরিবর্তিত হয়।\nযেমন ফলাফল দেখা, অনলাইন শপ, সামাজিক যোগাযোগমাধ্যম।\n\n বিষয়                                Static                                   Dynamic\n    ডেটা/ব্যবহারকারী/সময় অনুযায়ী\n কনটেন্ট                             সাধারণত আগে থেকে নির্ধারিত\n    বদলাতে পারে\n\n ডেটাবেজ                             সবসময় প্রয়োজন হয় না                      প্রায়ই ব্যবহৃত হয়\n    সার্ভার-লজিকের কারণে জটিল\n রক্ষণাবেক্ষণ                        ছোট সাইটে সহজ\n    হতে পারে\n\n উদাহরণ                              সাধারণ পরিচিতি পেজ                       ই-কমার্স, ফলাফল পোর্টাল\n\nওয়েবসাইটের কাঠামো\n১. Linear/Sequence: পেজগুলো ধারাবাহিকভাবে একটির পর একটি সাজানো; কোর্সের ধাপ/গল্পে ভালো। ২.\nHierarchical/Tree: Home থেকে বিভাগ, তারপর উপবিভাগে শাখার মতো বিস্তার; বড় সাইটে প্রচলিত। ৩.\nNetwork/Web-linked: পেজগুলো বহু দিকে পরস্পর লিংক করা; স্বাধীনভাবে বিভিন্ন পেজে যাওয়া যায়। ৪.\nCombination/Hybrid: একাধিক কাঠামোর সমন্বয়; বাস্তব সাইটে প্রচলিত।\n\nWireframe কী?\nওয়েবপেজের রং, ছবি ও চূড়ান্ত ডিজাইন দেওয়ার আগে কোথায় শিরোনাম, মেনু, ছবি, কনটেন্ট ও বাটন থাকবে\nতার সরল নকশাকে Wireframe বলে। এটি পেজের বিন্যাস বোঝায়; চূড়ান্ত গ্রাফিক ডিজাইন নয়।\n\nওয়েব ডিজাইনের মূলনীতি\nলক্ষ্য ব্যবহারকারী ও উদ্দেশ্য আগে নির্ধারণ; সহজ নেভিগেশন, স্পষ্ট শিরোনাম, পাঠযোগ্য লেখা; মোবাইলসহ বিভিন্ন\nপর্দায় মানিয়ে যায় এমন বিন্যাস; যথাযথ contrast ও alt text; কীবোর্ড ব্যবহারযোগ্যতা; দ্রুত লোড; হালনাগাদ তথ্য\nও নিরাপত্তা।"
+    },
+    {
+      "chapter": 4,
+      "number": 3,
+      "slug": "lesson-4-3",
+      "title": "HTML-এর পরিচয় ও মূল গঠন",
+      "content": "HTML কী?\nHTML-এর পূর্ণরূপ HyperText Markup Language। এটি প্রোগ্রামিং ভাষা নয়; ওয়েবপেজের কাঠামো ও অর্থপূর্ণ\nউপাদান চিহ্নিত করার Markup Language। ব্রাউজার HTML পড়ে শিরোনাম, অনুচ্ছেদ, লিংক, ছবি, তালিকা,\nটেবিল ইত্যাদি তৈরি করে।\n\nসুবিধা: শেখা তু লনামূলক সহজ; platform-independent; অধিকাংশ ব্রাউজার সমর্থন করে; CSS ও JavaScript-\nএর সঙ্গে কাজ করে; ওয়েবপেজের কাঠামো তৈরি করে।\nসীমাবদ্ধতা: HTML একা জটিল হিসাব/শর্ত /ডেটাবেজ পরিচালনা করে না; শুধু HTML দিয়ে আধুনিক ডিজাইনের\nসব নিয়ন্ত্রণ হয় না; ডেটা সংরক্ষণ/নিরাপত্তার জন্য server-side প্রযুক্তি লাগে।\n\nTag, Element, Attribute\n  •      Tag: কৌণিক বন্ধনীর মধ্যে লেখা নির্দেশ; যেমন <p>।\n\n  •      Element: শুরু ট্যাগ, কনটেন্ট ও শেষ ট্যাগসহ সম্পূর্ণ উপাদান; যেমন <p>আমি পড়ি</p>।\n\n  •      Attribute: ট্যাগে অতিরিক্ত তথ্য দেয়; যেমন <a href=\"https://example.com\">সাইট</a>-এ href।\n\n  •      Container/Paired Tag: সাধারণত শুরু ও শেষ ট্যাগ থাকে; যেমন <p>...</p>।\n\n  •      Empty/Void Element: আলাদা শেষ ট্যাগ থাকে না; যেমন <br>, <hr>, <img>।\n\nএকটি সঠিক HTML5 পেজের কাঠামো\n  <!doctype html>\n  <html lang=\"bn\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>আমার      প্রথম ওয়েবপেজ</title>\n  </head>\n  <body>\n      <h1>স্বাগতম</h1>\n    <p>এটি     আমার প্রথম HTML পেজ।</p>\n  </body>\n  </html>\n\n<!doctype html> ব্রাউজারকে HTML5 document mode জানায়। <html> পুরো ডকুমেন্টের মূল উপাদান।\n<head>-এ metadata, title, stylesheet থাকে। <body>-এ দৃশ্যমান কনটেন্ট থাকে।\n\nHTML কমেন্ট\n  <!-- এটি      একটি মন্তব্য; ব্রাউজারে সরাসরি দেখা যায় না -->"
+    },
+    {
+      "chapter": 4,
+      "number": 4,
+      "slug": "lesson-4-4",
+      "title": "গুরুত্বপূর্ণ HTML ট্যাগ ও Text Formatting",
+      "content": " ট্যাগ                               কাজ                                     উদাহরণ\n\n <h1>–<h6>                           শিরোনাম; h1 সবচেয়ে গুরুত্বপূর্ণ স্তর    <h1>শিরোনাম</h1>\n\n <p>                                 অনুচ্ছেদ                                <p>লেখা</p>\n\n <br>                                লাইন ব্রেক                              প্রথম লাইন<br>দ্বিতীয় লাইন\n\n <hr>                                বিষয়-বিভাজক রেখা                        <hr>\n\n <strong>                            গুরুত্ব বোঝায়                           <strong>সতর্ক তা</strong>\n\n <em>                                অর্থগত জোর                              <em>বিশেষ শব্দ</em>\n\n <b>, <i>                            দৃষ্টিগত bold/italic                    <b>Bold</b>\n\n <u>                                 আন্ডারলাইন                              <u>লেখা</u>\n\n <sup>, <sub>                        উপরিলিখন/নিচুলিখন                       x<sup>2</sup>\n\n <mark>                              চিহ্নিত লেখা                            <mark>গুরুত্বপূর্ণ </mark>\n\n <small>                             ছোট লেখা                                <small>নোট</small>\n\n <del>, <ins>                        মুছে/যোগ করা লেখা                       <del>পুরোনো</del>\n\n <pre>, <code>                       পূর্বনির্ধারিত লেখা/কোড                 <code>printf()</code>\n\nশিরোনাম দেখাতে শুধু বড় ফন্ট নয়, সঠিক <h1>–<h6> স্তর ব্যবহার করলে পেজের কাঠামো বোঝা সহজ হয়।"
+    },
+    {
+      "chapter": 4,
+      "number": 5,
+      "slug": "lesson-4-5",
+      "title": "Hyperlink, Image, List ও Table",
+      "content": "Hyperlink\nএক পেজ থেকে অন্য পেজ, ফাইল, ই-মেইল বা একই পেজের নির্দিষ্ট অংশে যাওয়ার সংযোগ হলো Hyperlink।\n\n  <a href=\"https://www.example.com\">Example ওয়েবসাইট</a>\n  <a href=\"about.html\">আমাদের   সম্পর্কে </a>\n  <a href=\"mailto:info@example.com\">ই-মেইল করুন</a>\n  <a href=\"#contact\">যোগাযোগ অংশে যান</a>\n\nhref হলো গন্তব্য ঠিকানা। target=\"_blank\" নতুন ট্যাবে খুলতে পারে; প্রয়োজন অনুযায়ী rel=\"noopener\nnoreferrer\" ব্যবহার করো।\n\nImage যোগ করা\n  <img src=\"images/school.jpg\" alt=\"বিদ্যালয়ের       মূল ভবন\" width=\"400\">\nsrc ছবির অবস্থান; alt ছবি দেখা না গেলে বা screen reader-এ ছবির অর্থ জানায়। অর্থবহ ছবিতে ভালো alt লেখা\nদাও; সাজসজ্জার ছবি হলে alt=\"\" হতে পারে। ছবির path সঠিক কি না পরীক্ষা করো।\n\nOrdered ও Unordered List\n  <h2>প্রয়োজনীয়     বই</h2>\n  <ul><li>ICT</li><li>বাংলা</li></ul>\n  <h2>ভর্তি   প্রক্রিয়া</h2>\n  <ol><li>ফর্ম     পূরণ</li><li>ফি জমা</li><li>কাগজপত্র যাচাই</li></ol>\nul = বুলেট তালিকা; ol = ক্রমিক তালিকা; li = তালিকার item। এক তালিকার মধ্যে আরেক তালিকা থাকলে\nNested List হয়।\n\nDefinition List\n  <dl>\n    <dt>HTML</dt><dd>ওয়েবপেজের        কাঠামো তৈরির মার্ক আপ ভাষা।</dd>\n    <dt>CSS</dt><dd>ওয়েবপেজের        স্টাইল নিয়ন্ত্রণের ভাষা।</dd>\n  </dl>\n\ndl তালিকা, dt বিষয়/শব্দ, dd তার ব্যাখ্যা।\n\nHTML Table\n  <table>\n    <caption>শিক্ষার্থীদের   ফলাফল</caption>\n    <thead><tr><th>রোল</th><th>নাম</th><th>GPA</th></tr></thead>\n    <tbody>\n    <tr><td>101</td><td>রিমা</td><td>5.00</td></tr>\n      <tr><td>102</td><td>সাকিব</td><td>4.80</td></tr>\n    </tbody>\n  </table>\n\ntable = টেবিল, tr = সারি, th = শিরোনাম ঘর, td = সাধারণ ঘর। rowspan একাধিক সারি জুড়ে এবং colspan\nএকাধিক কলাম জুড়ে ঘর বিস্তৃত করে।\n  <table border=\"1\">\n    <tr><th rowspan=\"2\">নাম</th><th colspan=\"2\">নম্বর</th></tr>\n    <tr><th>তত্ত্বীয়</th><th>ব্যবহারিক</th></tr>\n    <tr><td>রাহিম</td><td>70</td><td>25</td></tr>\n  </table>\n\nborder পুরোনো শিক্ষামূলক উদাহরণে দেখা যায়; আধুনিক ওয়েব ডিজাইনে CSS দিয়ে টেবিলের চেহারা নিয়ন্ত্রণ\nকরা উত্তম। টেবিল ব্যবহার করবে প্রকৃত tabular data-তে, পুরো page layout-এ নয়।"
+    },
+    {
+      "chapter": 4,
+      "number": 6,
+      "slug": "lesson-4-6",
+      "title": "HTML-এ রং, CSS, Semantic HTML ও Form",
+      "content": "HTML কাঠামো দেয়; CSS (Cascading Style Sheets) রং, ফন্ট, spacing, position ও responsive layout নিয়ন্ত্রণ\nকরে। রং লেখার পদ্ধতি: নাম (red), HEX (#ff0000), RGB (rgb(255,0,0)), HSL (hsl(0,100%,50%))।\n  <link rel=\"stylesheet\" href=\"style.css\">\n\n  body { font-family: sans-serif; line-height: 1.6; margin: 2rem; }\n  h1 { color: #164e8a; }\n\n<header>, <nav>, <main>, <section>, <article>, <aside>, <footer> হলো Semantic HTML; এগুলো\nকনটেন্টের অর্থ বোঝায়। সঠিক tag ব্যবহার করলে কোড বোঝা, maintain ও accessibility উন্নত হয়।\n\nForm-এর প্রাথমিক ধারণা\n  <form action=\"/submit\" method=\"post\">\n    <label for=\"name\">নাম</label>\n    <input id=\"name\" name=\"name\" type=\"text\" required>\n    <label for=\"email\">ই-মেইল</label>\n    <input id=\"email\" name=\"email\" type=\"email\" required>\n    <button type=\"submit\">জমা    দিন</button>\n  </form>\n\nForm তথ্য সংগ্রহ করে। শুধু HTML দিয়ে তথ্য নিরাপদভাবে ডেটাবেজে সংরক্ষণ হয় না; server-side processing,\nvalidation ও security প্রয়োজন।"
+    },
+    {
+      "chapter": 4,
+      "number": 7,
+      "slug": "lesson-4-7",
+      "title": "ওয়েবপেজ ডিজাইন ও প্রকাশনা — ব্যবহারিক",
+      "content": "কাজ: “আমার কলেজ” নামে একটি পেজ বানাও। ফোল্ডার:\n  college-site/\n    index.html\n    style.css\n    images/college.jpg\n\nindex.html-এ শিরোনাম, অনুচ্ছেদ, ছবি, নেভিগেশন লিংক, নোটিশের তালিকা ও শিক্ষার্থীদের টেবিল রাখো।\nstyle.css দিয়ে রং ও বিন্যাস ঠিক করো। ব্রাউজারে খুলে বানান, link, image path, mobile view ও keyboard\nnavigation পরীক্ষা করো। শেষে hosting-এ ফাইল deploy করো।\n\nসম্পূর্ণ নমুনা পেজ\n  <!doctype html>\n  <html lang=\"bn\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title>আমার কলেজ</title>\n    <link rel=\"stylesheet\" href=\"style.css\">\n  </head>\n  <body>\n    <header><h1>আমার     কলেজ</h1><p>জ্ঞান, শৃঙ্খলা ও সাফল্যের পথে</p></header>\n    <nav aria-label=\"প্রধান মেনু\">\n      <a href=\"#about\">পরিচিতি</a> <a href=\"#notice\">নোটিশ</a> <a href=\"#students\">শিক্ষার্থী</a>\n    </nav>\n    <main>\n    <section id=\"about\"><h2>আমাদের   সম্পর্কে </h2><p>এটি একটি নমুনা শিক্ষাপ্রতিষ্ঠান ওয়েবপেজ।\n  </p>\n    <img src=\"images/college.jpg\" alt=\"কলেজ   ভবন\" width=\"320\"></section>\n      <section id=\"notice\"><h2>নোটিশ</h2><ul><li>পরীক্ষার রুটিন প্রকাশিত হয়েছে।</li><li>ভর্তি ফর্ম\n  জমা দিতে হবে।</li></ul></section>\n      <section id=\"students\"><h2>শিক্ষার্থীদের তালিকা</h2>\n    <table><tr><th>রোল</th><th>নাম</th></tr><tr><td>101</td><td>রিমা</td></tr><tr><td>102</\n  td><td>সাকিব</td></tr></table>\n      </section>\n    </main>\n    <footer><p>© 2026 আমার    কলেজ</p></footer>\n  </body>\n  </html>"
+    },
+    {
+      "chapter": 5,
+      "number": 1,
+      "slug": "lesson-5-1",
+      "title": "কম্পিউটারের সংগঠন ও প্রোগ্রামের ধারণা",
+      "content": "কম্পিউটার ইনপুট গ্রহণ করে, নির্দেশ অনুযায়ী প্রসেস করে, ফলাফল আউটপুট দেয় এবং প্রয়োজন হলে ডেটা\nসংরক্ষণ করে।\n\nপ্রধান অংশ: - Input Unit: কীবোর্ড , মাউস, স্ক্যানার ইত্যাদি থেকে ডেটা নেয়। - CPU (Central Processing\nUnit): নির্দেশ কার্যকর ও নিয়ন্ত্রণ করে; একে কম্পিউটারের মস্তিষ্ক বলা হয়। - ALU (Arithmetic Logic Unit):\nযোগ-বিয়োগ, তু লনা ও যৌক্তিক কাজ করে। - CU (Control Unit): নির্দেশের প্রবাহ নিয়ন্ত্রণ করে এবং বিভিন্ন\nঅংশের কাজ সমন্বয় করে। - Registers/Cache: CPU-র কাছে দ্রুত অস্থায়ী ডেটা/নির্দেশ ধরে রাখে। -\nMemory/Storage: RAM চলমান কাজের ডেটা সাময়িকভাবে রাখে; SSD/HDD দীর্ঘমেয়াদি সংরক্ষণ করে। -\nOutput Unit: মনিটর, প্রিন্টার ইত্যাদির মাধ্যমে ফল দেখায়।\n\nProgram ও Programming\nProgram: নির্দিষ্ট সমস্যা সমাধানের জন্য কম্পিউটারকে দেওয়া ধারাবাহিক নির্দেশের সমষ্টি।\nProgramming: সমস্যা বিশ্লেষণ, পরিকল্পনা, কোড লেখা, পরীক্ষা ও সংশোধনের প্রক্রিয়া।\nProgrammer: যিনি প্রোগ্রাম তৈরি, পরীক্ষা ও রক্ষণাবেক্ষণ করেন।"
+    },
+    {
+      "chapter": 5,
+      "number": 2,
+      "slug": "lesson-5-2",
+      "title": "প্রোগ্রামিং ভাষা ও প্রজন্ম",
+      "content": "প্রোগ্রামিং ভাষা হলো কম্পিউটারকে নির্দেশ দেওয়ার জন্য নির্দিষ্ট নিয়ম ও শব্দভান্ডারসমৃদ্ধ ভাষা। ভাষার স্তর যত\nমানুষের ভাষার কাছাকাছি, সাধারণত লেখা ও বোঝা তত সহজ; তবে কম্পিউটার চালাতে শেষ পর্যন্ত মেশিন-\nউপযোগী নির্দেশ প্রয়োজন।\n\nভাষার প্রজন্ম\n১. প্রথম প্রজন্ম (1GL): Machine Language. ০ ও ১-এর বাইনারি নির্দেশ; CPU সরাসরি বুঝতে পারে; দ্রুত নির্বাহ\nহলেও লেখা/ডিবাগ করা কঠিন ও hardware-নির্ভ র।\n২. দ্বিতীয় প্রজন্ম (2GL): Assembly Language. ADD, MOV-এর মতো mnemonic ব্যবহার করে; Assembler\nমেশিন কোডে রূপান্তর করে; machine language-এর তুলনায় সহজ, কিন্তু hardware-নির্ভ রতা থাকে।\n৩. তৃতীয় প্রজন্ম (3GL): High-level Language. মানুষের ভাষার কাছাকাছি; যেমন C, C++, Java, BASIC,\nFORTRAN, Python; Compiler/Interpreter প্রয়োজন হয়।\n৪. চতুর্থ প্রজন্ম (4GL): নির্দিষ্ট কাজ/প্রয়োজন বর্ণনায় উচ্চস্তরের ভাষা বা টুল; যেমন SQL-এ তথ্য চাওয়া।\n৫. পঞ্চম প্রজন্ম (5GL): সমস্যা/constraint বা জ্ঞানভিত্তিক নিয়ম দিয়ে সমাধান প্রকাশের ভাষা/পদ্ধতি; AI ও\nlogic programming-এ ধারণাটি ব্যবহৃত হয়।\n\nস্তর অনুযায়ী: Low-level = machine ও assembly; High-level = C, Java, Python ইত্যাদি। C-কে প্রচলিত\nপাঠ্যবইয়ে মধ্যম স্তরের ভাষা বলা হয়, কারণ এতে উচ্চস্তরের গঠন এবং নিম্নস্তরের memory/bit-level কাজের\nসুবিধা দুইই আছে। আধুনিক শ্রেণিবিভাগে “মধ্যম স্তর” একটি শিক্ষামূলক ব্যাখ্যা, কঠোর আন্তর্জাতিক মান নয়।\n\nপরিচিত ভাষা/পরিবেশ\n  •     Visual Basic: Microsoft-এর BASIC-ধারার ভাষা/উন্নয়ন পরিবেশ; Windows desktop ও business application-এ\n    ব্যবহৃত হয়েছে।\n  •     Java: general-purpose, object-oriented ভাষা; JVM-এর মাধ্যমে বিভিন্ন platform-এ চালানো যায়।\n\n  •     ALGOL: প্রাথমিক structured/algorithmic ভাষাগুলোর একটি; পরবর্তী ভাষার নকশায় প্রভাব রেখেছে।\n\n  •     FORTRAN: বৈজ্ঞানিক ও সংখ্যাতাত্ত্বিক গণনায় ঐতিহাসিকভাবে গুরুত্বপূর্ণ।\n\n  •     Python: উচ্চস্তরের, পাঠযোগ্য syntax; automation, data science, web ও AI-তে ব্যবহৃত।\n\n  •     Oracle: Oracle মূলত ডেটাবেজ প্রযুক্তি/প্রতিষ্ঠান; Oracle Database-এ SQL ও PL/SQL ব্যবহার করা হয়।\n    বইয়ের তালিকায় “Oracle” থাকলে এটিকে সাধারণ-purpose programming language না ভেবে database\n    platform ও PL/SQL-এর প্রেক্ষিতে বোঝা ভালো।"
+    },
+    {
+      "chapter": 5,
+      "number": 3,
+      "slug": "lesson-5-3",
+      "title": "অনুবাদক প্রোগ্রাম — Assembler, Compiler, Interpreter",
+      "content": "কম্পিউটার সরাসরি মেশিন-উপযোগী নির্দেশ কার্যকর করে। উচ্চস্তরের/অ্যাসেম্বলি কোডকে উপযুক্ত মেশিন-\nউপযোগী রূপে বদলানোর সফটওয়্যারকে Translator Program বলে।\n\n অনুবাদক                              কাজ                                    সাধারণ বৈশিষ্ট্য\n\n Assembler                            Assembly → Machine code                mnemonic নির্দেশ অনুবাদ করে\n    সাধারণত সম্পূর্ণ source program        অনুবাদের পর executable বারবার\n Compiler                             অনুবাদ করে object/executable           চালানো যায়; error list একত্রে\n    তৈরি করে                               দেখাতে পারে\n    নির্দেশ/অংশবিশেষ অনুবাদ করে           শেখা ও পরীক্ষা সহজ; প্রতিবার\n Interpreter\n    সঙ্গে সঙ্গে execute করে                চালানোর সময় অনুবাদ লাগে\nসতর্ক তা: আধুনিক ভাষা ও toolchain-এ compiler/interpreter মিশ্র পদ্ধতিও থাকতে পারে; বোর্ডে র উত্তরে\nপাঠ্যবইয়ের মৌলিক পার্থক্য লিখবে।"
+    },
+    {
+      "chapter": 5,
+      "number": 4,
+      "slug": "lesson-5-4",
+      "title": "অ্যালগরিদম, ফ্লোচার্ট ও Pseudocode",
+      "content": "Algorithm কী?\nকোনো সমস্যা সমাধানের জন্য সীমিত, সুস্পষ্ট ও ধারাবাহিক ধাপে সাজানো নির্দেশনাকে Algorithm বলে। ভালো\nAlgorithm-এর বৈশিষ্ট্য: Input থাকতে পারে, Output দেয়, ধাপগুলো স্পষ্ট, সীমিত ধাপে শেষ হয় এবং\nবাস্তবায়নযোগ্য।\n\nউদাহরণ: দুটি সংখ্যা যোগ ১. শুরু। ২. A ও B ইনপুট। ৩. S = A + B। ৪. S প্রদর্শন। ৫. শেষ।\n\nPseudocode\nপ্রোগ্রামিং ভাষার নির্দিষ্ট syntax না মেনে সাধারণ ভাষা/ছদ্ম-কোডে অ্যালগরিদম লেখাকে Pseudocode বলে। এটি\nভাষা-নিরপেক্ষ; coding শুরুর আগে যুক্তি গুছাতে সাহায্য করে।\n  START\n    INPUT A, B\n    SUM ← A + B\n    PRINT SUM\n  END\n\nFlowchart\nঅ্যালগরিদমকে নির্দিষ্ট চিহ্ন ও তীর দিয়ে চিত্রাকারে প্রকাশ করাকে Flowchart বলে। সাধারণ প্রতীক:\n\n আকৃ তি (বর্ণনা)                      নাম                                    ব্যবহার\n\n ডিম্বাকার                            Terminal                               Start/End\n\n আকৃ তি (বর্ণনা)                     নাম                                    ব্যবহার\n\n আয়তক্ষেত্র                          Process                                হিসাব/প্রক্রিয়া\n\n সামান্তরিক                          Input/Output                           ডেটা নেওয়া/দেখানো\n\n হীরক                                Decision                               শর্ত পরীক্ষা; Yes/No শাখা\n\n তীর/Arrow                           Flow line                              ধাপের দিক\n\n ছোট বৃত্ত                           Connector                              একই পৃষ্ঠার অংশ যুক্ত করা\nAlgorithm ও Flowchart-এর পার্থক্য: Algorithm ধাপে ধাপে লিখিত নির্দেশ; Flowchart একই যুক্তির চিত্র।\nAlgorithm তৈরি ও পরিবর্তন সহজ; Flowchart এক নজরে প্রবাহ বোঝায়, তবে বড় হলে জটিল/পরিবর্তন কঠিন\nহতে পারে।\n\nসমস্যা: একটি সংখ্যা জোড় না বিজোড় — শুরু → N ইনপুট → N % 2 == 0 পরীক্ষা → সত্য হলে “জোড়”, নইলে\n“বিজোড়” → শেষ। এখানে % হলো remainder/modulus operator।"
+    },
+    {
+      "chapter": 5,
+      "number": 5,
+      "slug": "lesson-5-5",
+      "title": "প্রোগ্রাম তৈরির ধাপ ও Debugging",
+      "content": "১. Problem Definition: কী সমস্যা সমাধান করতে হবে তা নির্ধারণ। ২. Analysis: ইনপুট, আউটপুট, নিয়ম ও\nসীমাবদ্ধতা চিহ্নিত। ৩. Algorithm/Pseudocode: ধাপ ঠিক করা। ৪. Flowchart: প্রয়োজন হলে চিত্র আঁকা। ৫.\nCoding: ভাষায় কোড লেখা। ৬. Translation/Build: Compiler/Interpreter দিয়ে চালানোর উপযোগী করা। ৭.\nTesting: স্বাভাবিক, সীমান্ত ও ভুল ইনপুট দিয়ে পরীক্ষা। ৮. Debugging: ত্রুটি খুঁজে সংশোধন। ৯.\nDocumentation: কীভাবে কাজ করে লেখা। ১০. Maintenance: প্রয়োজনমতো আপডেট ও উন্নয়ন।\n\nError-এর ধরন\n  •     Syntax Error: ভাষার লেখার নিয়ম ভঙ্গ; যেমন ; বাদ।\n\n  •     Runtime Error: প্রোগ্রাম চলার সময় সমস্যা; যেমন শূন্য দিয়ে ভাগের চেষ্টা।\n\n  •     Logical Error: কোড চলে, কিন্তু হিসাব/ফল ভুল; যেমন যোগের বদলে বিয়োগ করা।\n\nDebugging হলো ত্রুটি খুঁজে কারণ নির্ণয় ও সংশোধনের পদ্ধতি। শুধু error message দেখলেই কাজ শেষ নয়;\nসঠিক test case দিয়ে সংশোধন যাচাই করতে হয়।"
+    },
+    {
+      "chapter": 5,
+      "number": 6,
+      "slug": "lesson-5-6",
+      "title": "C ভাষার পরিচয় ও গঠন",
+      "content": "C একটি general-purpose, procedural, compiled ভাষা। Dennis Ritchie ১৯৭০-এর দশকের শুরুতে Bell\nLabs-এ C উন্নয়ন করেন; UNIX-সহ সিস্টেম সফটওয়্যারে এর বড় প্রভাব রয়েছে। C portable, efficient এবং\nhardware-এর কাছাকাছি কাজ করার সক্ষমতাসম্পন্ন।\n\nC প্রোগ্রামের সাধারণ গঠন\n  #include <stdio.h>         // Standard input-output header\n\n  int main(void) {         // Program execution starts here\n      printf(\"Hello, HSC!\\\\n\");\n      return 0;\n  }\n\n#include <stdio.h> input/output function declaration আনে। main() প্রধান function; program execution\nএখান থেকে শুরু হয়। { } block নির্ধারণ করে। printf() output দেখায়। return 0; সাধারণত সফল সমাপ্তির\nসংকেত। ; statement শেষ করে।\n\nC-এর Tokens\nপ্রোগ্রামের ক্ষু দ্র অর্থবহ একককে Token বলে। প্রধান ধরন: ১. Keywords: সংরক্ষিত শব্দ; যেমন int, if, else,\nreturn, while। ২. Identifiers: variable/function-এর নাম; যেমন total, main। ৩. Constants/Literals: স্থির\nমান; যেমন 10, 3.5, 'A'। ৪. Strings: ডাবল কোটেশনের অক্ষর-সমষ্টি; যেমন \"Hello\"। ৫. Operators: কাজের\nচিহ্ন; যেমন +, -, ==। ৬. Punctuators/Special symbols: {}, (), ;, , ইত্যাদি।\n\nIdentifier-এর নিয়ম\n  •       অক্ষর বা underscore দিয়ে শুরু হবে; সংখ্যা দিয়ে নয়।\n  •       পরের অংশে অক্ষর, সংখ্যা, underscore থাকতে পারে।\n  •       space বা @, #-এর মতো চিহ্ন রাখা যাবে না।\n\n  •       C case-sensitive: sum, Sum, SUM আলাদা identifier।\n\n  •       Keyword-কে identifier হিসেবে ব্যবহার করা যাবে না।\n\nVariable ও Constant\nVariable হলো নামযুক্ত মেমোরি-স্থান যার মান execution-এর সময় বদলাতে পারে। Constant হলো স্থির মান।\n  int age = 18;\n  const float PI = 3.14159f;\n  age = 19;\n\nData Type\n    Format specifier (সাধারণ\n Type                          সাধারণ অর্থ                    উদাহরণ\n    ব্যবহার)\n\n char\n    একটি character/ছোট             'A'                         %c\n    integer\n\n int                           পূর্ণসংখ্যা                    25                          %d\n\n float                         single-precision ভগ্নাংশ       3.5f                        %f\n\n double                        অধিক precision ভগ্নাংশ         3.14159                     %lf in scanf; %f in printf\n    কোনো value নেই/নির্দিষ্ট\n void                                                         void show(void)             format নেই\n    return নেই\n\nType-এর প্রকৃত byte size compiler ও platform অনুযায়ী বদলাতে পারে; নির্দিষ্ট size মুখস্থের আগে নিজের\nপাঠ্যবই/পরীক্ষার নির্দেশনা দেখো।\n\nInput ও Output\n  #include <stdio.h>\n  int main(void) {\n      int age;\n      printf(\"Boyosh dao: \");\n      scanf(\"%d\", &age);\n      printf(\"Tomar boyosh %d\\\\n\", age);\n      return 0;\n  }\n\nscanf() ইনপুট নেয়, printf() আউটপুট দেয়। scanf()-এ সাধারণ scalar variable-এর ঠিকানা দিতে & লাগে;\nstring array-এর নামের ক্ষেত্রে নিয়ম আলাদা।"
+    },
+    {
+      "chapter": 5,
+      "number": 7,
+      "slug": "lesson-5-7",
+      "title": "Operators ও Expressions",
+      "content": "     Operator                         কাজ                                    উদাহরণ\n\n     +-*/%                            গাণিতিক                                a+b, a%2\n\n     == != < > <= >=                  তু লনা                                 a>=b\n\n     && || !                          Logical AND/OR/NOT                     a>0 && b>0\n\n     = += -= *=                       Assignment                             x += 2\n\n     ++ --                            এক বাড়ানো/কমানো                        i++\n    Address-of (এছাড়াও bitwise AND\n     &                                                                       scanf(\"%d\", &n)\n    প্রসঙ্গে)\nগুরুত্বপূর্ণ : = মান বসায়; == সমান কি না পরীক্ষা করে। 5/2 integer division হলে ফল 2; 5.0/2 হলে ফল 2.5।\nবন্ধনী ব্যবহার করলে expression বোঝা সহজ হয়।"
+    },
+    {
+      "chapter": 5,
+      "number": 8,
+      "slug": "lesson-5-8",
+      "title": "Decision / Conditional Statement",
+      "content": "if\n      if (marks >= 40) {\n    printf(\"Pass\\\\n\");\n      }\n\nশর্ত সত্য হলে block চলে।\n\nif…else\n      if (number % 2 == 0) {\n    printf(\"Even\\\\n\");\n      } else {\n    printf(\"Odd\\\\n\");\n      }\n\nশর্ত সত্য হলে প্রথম block, মিথ্যা হলে else block চলে।\n\nelse if ladder\n      if (marks >= 80) {\n    printf(\"A+\\\\n\");\n      } else if (marks >= 70) {\n    printf(\"A\\\\n\");\n      } else if (marks >= 60) {\n    printf(\"A-\\\\n\");\n      } else {\n    printf(\"Need improvement\\\\n\");\n      }\n\nশর্ত গুলো উপর থেকে নিচে পরীক্ষা হয়। সঠিক ক্রমে শর্ত লিখবে।\n\nswitch\nনির্দিষ্ট expression-এর মান অনুযায়ী branch বেছে নিতে switch ব্যবহৃত হয়।\n      switch (choice) {\n    case 1: printf(\"Add\\\\n\"); break;\n    case 2: printf(\"Subtract\\\\n\"); break;\n    default: printf(\"Invalid\\\\n\");\n      }\n\nbreak না থাকলে পরের case-এ চলে যেতে পারে (fall-through)।"
+    },
+    {
+      "chapter": 5,
+      "number": 9,
+      "slug": "lesson-5-9",
+      "title": "Looping Structure",
+      "content": "একই কাজ বারবার করার জন্য loop ব্যবহার হয়।\n\nfor loop\n  for (int i = 1; i <= 5; i++) {\n      printf(\"%d\\\\n\", i);\n  }\n\nশুরু, শর্ত ও update এক জায়গায় থাকে। কতবার চলবে জানা থাকলে সুবিধাজনক।\n\nwhile loop\n  int i = 1;\n  while (i <= 5) {\n      printf(\"%d\\\\n\", i);\n      i++;\n  }\n\nপ্রথমে শর্ত পরীক্ষা হয়; শুরুতেই false হলে একবারও চলবে না।\n\ndo…while loop\n  int i = 1;\n  do {\n       printf(\"%d\\\\n\", i);\n       i++;\n  } while (i <= 5);\n\nপ্রথমে body চলে, পরে শর্ত পরীক্ষা হয়; তাই অন্তত একবার চলে।\n\nbreak ও continue\nbreak loop/switch থেকে বের হয়। continue চলতি iteration-এর বাকি অংশ বাদ দিয়ে পরের iteration-এ যায়।"
+    },
+    {
+      "chapter": 5,
+      "number": 10,
+      "slug": "lesson-5-10",
+      "title": "Library Function, Array ও Debugging অনুশীলন",
+      "content": "Library function আগে থেকেই তৈরি function; যেমন printf(), scanf(), sqrt()। sqrt() ব্যবহার করতে\n<math.h> প্রয়োজন হতে পারে; compile করার সময় toolchain অনুযায়ী math library link করতে হয়।\n\n১-মাত্রিক Array\nএকই ধরনের একাধিক মান একটি নামের অধীনে index দিয়ে রাখা যায়।\n  int marks[5] = {70, 80, 65, 90, 75};\n  printf(\"%d\", marks[0]);    // প্রথম   মান\nC-তে array index ০ থেকে শুরু। ৫টি উপাদানের বৈধ index ০–৪; marks[5] access করলে undefined behavior\nহতে পারে।\n\nভুল খুঁজে দেখা: compiler error, runtime fault ও logical ভুল আলাদা করে শনাক্ত করো। Code ছোট ছোট\nঅংশে পরীক্ষা করো। শূন্য দিয়ে ভাগের চেষ্টা কোরো না।"
+    },
+    {
+      "chapter": 6,
+      "number": 1,
+      "slug": "lesson-6-1",
+      "title": "Data, Information ও Database",
+      "content": "Data ও Information\n  •     Data (উপাত্ত): কাঁচা সংখ্যা, শব্দ, চিহ্ন বা পর্যবেক্ষণ; নিজে নিজে অর্থ স্পষ্ট নাও হতে পারে। যেমন: 75, 82,\n    90।\n\n  •     Information (তথ্য): প্রক্রিয়াজাত ও অর্থপূর্ণ উপাত্ত; যেমন: “তিন পরীক্ষার গড় নম্বর ৮২.৩৩”।\n\nDatabase কী?\nপরস্পর সম্পর্ক যুক্ত উপাত্তকে নির্দিষ্ট কাঠামোয় সংগঠিতভাবে সংরক্ষণ করার ব্যবস্থাকে Database বলে। যেমন\nকলেজের শিক্ষার্থী, শিক্ষক, কোর্স ও ফলাফলের তথ্য।\n\nDBMS কী?\nDatabase তৈরি, সংরক্ষণ, খোঁজা, পরিবর্তন, মুছে ফেলা, নিরাপত্তা ও ব্যবহারকারীর নিয়ন্ত্রণের জন্য ব্যবহৃত\nসফটওয়্যারকে DBMS বলে। উদাহরণ: SQLite, MySQL, PostgreSQL, Oracle Database, Microsoft Access।\n\nSpreadsheet ও Database\nSpreadsheet-এ সারি-কলামে হিসাব/তালিকা রাখা সহজ; ছোট একক কাজের জন্য সুবিধাজনক। Database-এ\nসম্পর্ক যুক্ত একাধিক টেবিল, constraints, একাধিক ব্যবহারকারী, query, security ও transaction ব্যবস্থাপনা\nবেশি সুসংগঠিতভাবে হয়। তাই বড় ও সম্পর্ক যুক্ত ডেটার ক্ষেত্রে DBMS উপযোগী।"
+    },
+    {
+      "chapter": 6,
+      "number": 2,
+      "slug": "lesson-6-2",
+      "title": "Database-এর উপাদান ও Data Type",
+      "content": "  •     Table: সম্পর্ক যুক্ত তথ্য সারি ও কলামে সাজানোর কাঠামো।\n\n  •     Field/Column: একটি বৈশিষ্ট্যের তথ্য রাখে; যেমন Name, Roll।\n\n  •     Record/Row: একটি সত্তা/ব্যক্তির সম্পূর্ণ তথ্য; যেমন একজন শিক্ষার্থীর সব তথ্য।\n\n  •     Entity: যে বাস্তব বস্তু/ব্যক্তি/ঘটনা সম্পর্কে ডেটা রাখা হয়; যেমন Student।\n\n  •     Attribute: Entity-এর বৈশিষ্ট্য; যেমন Student-এর Name, DOB।\n\n  •     Value: কোনো নির্দিষ্ট record-এ attribute-এর মান; যেমন Name = “রিমা”।\n\n  •     Data Type: ফিল্ডে কী ধরনের মান থাকবে তা নির্ধারণ করে; যেমন INTEGER, TEXT, DATE-সদৃশ TEXT।\n\nSQLite-এর ডেটা টাইপিং অন্যান্য DBMS-এর তুলনায় flexible; SQLite-এ storage class হলো NULL, INTEGER,\nREAL, TEXT ও BLOB। HSC বইয়ে অন্য DBMS-এর Text, Number, Date/Time ইত্যাদি বর্ণনা থাকতে পারে।\nপ্রশ্নের প্রসঙ্গ অনুযায়ী উত্তর দেবে।"
+    },
+    {
+      "chapter": 6,
+      "number": 3,
+      "slug": "lesson-6-3",
+      "title": "DBMS-এর কাজ ও সুবিধা",
+      "content": "১. ডেটা সংগঠিতভাবে সংরক্ষণ। ২. দ্রুত অনুসন্ধান ও রিপোর্ট তৈরি। ৩. নতুন রেকর্ড যোগ, পরিবর্তন ও মুছে ফেলা।\n৪. একাধিক ব্যবহারকারীর ডেটা ব্যবস্থাপনা। ৫. Access control/permission। ৬. Backup ও recovery। ৭. Data\nintegrity বজায় রাখা। ৮. একই ডেটা বারবার রাখার প্রয়োজন কমানো।\n\nসীমাবদ্ধতা: সফটওয়্যার/হার্ড ওয়্যার খরচ, প্রশিক্ষণ, সঠিক নকশার প্রয়োজন, নিরাপত্তা ঝুঁকি,\nব্যাকআপ/রক্ষণাবেক্ষণ এবং ব্যবস্থাপনা জটিলতা।"
+    },
+    {
+      "chapter": 6,
+      "number": 4,
+      "slug": "lesson-6-4",
+      "title": "Key — Primary, Composite ও Foreign Key",
+      "content": "Primary Key\nএকটি টেবিলের প্রতিটি record-কে এককভাবে শনাক্ত করার field বা field-সমষ্টি। Primary Key-এর মান unique\nহতে হবে এবং NULL হতে পারে না। যেমন Student টেবিলে student_id।\n\nComposite Primary Key\nদুই বা একাধিক field মিলে যখন primary key তৈরি হয়। যেমন Enrollment টেবিলে (student_id, course_id) —\nএকই শিক্ষার্থী একই কোর্সে একবার enrollment করলে জোড়াটি unique।\n\nForeign Key\nএক টেবিলের field যা অন্য টেবিলের Primary Key/Unique Key-কে reference করে; এর মাধ্যমে টেবিলের মধ্যে\nসম্পর্ক তৈরি হয়। যেমন Enrollment টেবিলের student_id, Student টেবিলের student_id-কে reference করে।\n\n বিষয়                                  Primary Key                           Foreign Key\n    অন্য টেবিলের রেকর্ডের সঙ্গে\n উদ্দেশ্য                              রেকর্ড uniquely শনাক্ত\n    সম্পর্ক\n    একই মান একাধিকবার থাকতে\n মান                                   unique ও NOT NULL                     পারে; NULL অনুমোদিত কি না\n    schema-নির্ভ র\n    একটি টেবিলে একটি primary key\n সংখ্যা                                constraint (এক বা একাধিক              একাধিক foreign key থাকতে পারে\n    column)"
+    },
+    {
+      "chapter": 6,
+      "number": 5,
+      "slug": "lesson-6-5",
+      "title": "Relationship ও Relational Database",
+      "content": "Relational Database: ডেটা একাধিক টেবিলে রেখে common key-এর মাধ্যমে সম্পর্ক স্থাপন করা ডেটাবেজ\nমডেল। E. F. Codd ১৯৭০ সালে relational model প্রস্তাব করেন।\n\nসম্পর্কে র ধরন\n  •       One-to-One (১:১): এক রেকর্ডের সঙ্গে অন্য টেবিলের সর্বোচ্চ একটি রেকর্ড যুক্ত। উদাহরণ: ব্যক্তি ও একটি\n    পরিচয়-রেকর্ড — বাস্তব নকশা অনুযায়ী।\n  •       One-to-Many (১:M): এক বিভাগে অনেক শিক্ষার্থী; প্রতিটি শিক্ষার্থী একটি বিভাগের।\n\n  •       Many-to-Many (M:N): অনেক শিক্ষার্থী অনেক কোর্সে ভর্তি । এটি সাধারণত একটি মধ্যবর্তী\n    Junction/Enrollment টেবিল দিয়ে দুইটি ১:M সম্পর্কে ভাঙা হয়।\n\nERD (Entity Relationship Diagram)\nEntity, attribute ও relationship চিত্রে প্রকাশের পদ্ধতি। Entity সাধারণত আয়তক্ষেত্র, Attribute উপবৃত্ত এবং\nRelationship হীরক/সংযোগরেখায় দেখানো হয় (notation ভেদে ভিন্ন হতে পারে)। ERD ডেটাবেজ তৈরির আগে\nপরিকল্পনায় সাহায্য করে।\n\nউদাহরণ: Student(student_id, name, dept_id) এবং Department(dept_id, dept_name)। Department-এর\ndept_id Primary Key; Student-এর dept_id Foreign Key। একটি Department-এর অনেক Student থাকতে\nপারে।"
+    },
+    {
+      "chapter": 6,
+      "number": 6,
+      "slug": "lesson-6-6",
+      "title": "SQL পরিচিতি ও শ্রেণিবিভাগ",
+      "content": "SQL-এর পূর্ণরূপ Structured Query Language। Relational Database-এ ডেটা সংজ্ঞায়িত, অনুসন্ধান ও\nপরিবর্তনের জন্য ব্যবহৃত হয়।\n\n শ্রেণি                            কাজ                                    সাধারণ কমান্ড\n\n DDL                               কাঠামো সংজ্ঞা/পরিবর্তন                CREATE, ALTER, DROP\n\n DML                               ডেটা যোগ/পরিবর্তন/মুছে ফেলা           INSERT, UPDATE, DELETE\n\n DQL                               ডেটা অনুসন্ধান                         SELECT\n\n DCL                               অনুমতি নিয়ন্ত্রণ                       GRANT, REVOKE (DBMS-নির্ভ র)\n\n TCL                               Transaction নিয়ন্ত্রণ                  COMMIT, ROLLBACK\n\nকিছু পাঠ্যবইয়ে SELECT-কে DML-এর অংশ হিসেবে দেখানো হতে পারে; আধুনিক শিক্ষায় DQL নামেও আলাদা\nকরে বোঝানো হয়। পরীক্ষায় নিজের বইয়ের শ্রেণিবিভাগ অনুসরণ করবে।\n\nSQL-এ Table তৈরি (SQLite-compatible)\n  PRAGMA foreign_keys = ON;\n\n  CREATE TABLE Department (\n      dept_id INTEGER PRIMARY KEY,\n      dept_name TEXT NOT NULL UNIQUE\n  );\n\n  CREATE TABLE Student (\n      student_id INTEGER PRIMARY KEY,\n      name TEXT NOT NULL,\n      age INTEGER CHECK (age >= 0),\n      dept_id INTEGER,\n      FOREIGN KEY (dept_id) REFERENCES Department(dept_id)\n  );\n\nData Insert\n  INSERT INTO Department (dept_id, dept_name)\n  VALUES (1, 'Science'), (2, 'Humanities');\n\n  INSERT INTO Student (student_id, name, age, dept_id)\n  VALUES (101, 'Rima', 18, 1), (102, 'Sakib', 19, 1);\n\nSELECT / অনুসন্ধান\n  SELECT * FROM Student;\n  SELECT name, age FROM Student WHERE age >= 18;\n  SELECT * FROM Student ORDER BY name ASC;\n\nWHERE শর্ত দেয়; ORDER BY সাজায়; ASC ঊর্ধ্বক্রম, DESC নিম্নক্রম।\n\nUPDATE / পরিবর্তন\n  UPDATE Student\n  SET age = 20\n  WHERE student_id = 102;\n\nWHERE না দিলে সব row-তে পরিবর্তন ঘটতে পারে।\n\nDELETE / মুছে ফেলা\n  DELETE FROM Student\n  WHERE student_id = 102;\n\nএখানেও WHERE ভুলে গেলে সব row মুছে যেতে পারে। চালানোর আগে SELECT দিয়ে target row যাচাই করা\nভালো।\n\nJOIN / দুই টেবিলের তথ্য একসঙ্গে দেখা\n  SELECT Student.name, Department.dept_name\n  FROM Student\n  JOIN Department ON Student.dept_id = Department.dept_id;\n\nJOIN common key-এর ভিত্তিতে একাধিক টেবিলের তথ্য একত্রে দেখায়।\n\nAggregate Function\nCOUNT() row গোনে; SUM() যোগ করে; AVG() গড়; MIN() সর্বনিম্ন; MAX() সর্বোচ্চ। GROUP BY একই\nবৈশিষ্ট্যের record একত্রে নিয়ে হিসাব করে।"
+    },
+    {
+      "chapter": 6,
+      "number": 7,
+      "slug": "lesson-6-7",
+      "title": "SQLite ও এর ব্যবহার",
+      "content": "SQLite একটি lightweight, serverless, self-contained relational database engine। আলাদা database\nserver চালানো ছাড়াই সাধারণত একটি ফাইলে ডেটাবেজ রাখা যায়। Mobile app, desktop app, ছোট/মাঝারি\nপ্রকল্প, পরীক্ষণ ও শেখার কাজে এটি জনপ্রিয়।\n\nSQLite ও SQL এক নয়: SQL হলো query language; SQLite হলো SQL ব্যবহার করে এমন database\nengine/software।\n\nSQLite-এ কাজ করার সাধারণ ধাপ\n১. SQLite command-line tool বা SQLite-সমর্থিত GUI খুলে নতুন database file তৈরি/খুলো। ২. CREATE\nTABLE দিয়ে টেবিল তৈরি। ৩. INSERT দিয়ে তথ্য যোগ। ৪. SELECT দিয়ে তথ্য দেখো। ৫. UPDATE ও DELETE\nঅনুশীলন করো। ৬. database file-এর backup রাখো।\n\nSQLite shell-এ:\n\n  .open college.db\n  .tables\n  .schema Student\n\nতারপর SQL command চালাও। GUI-তে একই কাজ menu/editor দিয়ে করা যায়।"
+    },
+    {
+      "chapter": 6,
+      "number": 8,
+      "slug": "lesson-6-8",
+      "title": "Sorting, Searching ও Indexing",
+      "content": "  •     Sorting: নির্দিষ্ট field-এর মান অনুযায়ী record-কে ঊর্ধ্ব বা নিম্নক্রমে সাজানো। SQL-এ ORDER BY।\n\n  •     Searching/Querying: শর্ত অনুযায়ী প্রয়োজনীয় record খোঁজা। SQL-এ WHERE।\n\n  •     Indexing: নির্দিষ্ট field-এর মান দ্রুত খুঁজতে অতিরিক্ত index structure তৈরি করা। এতে search দ্রুত হতে\n    পারে, কিন্তু index সংরক্ষণে অতিরিক্ত জায়গা লাগে এবং INSERT/UPDATE/DELETE-এ index আপডেটের\n    খরচ হয়।\nSorting ও Indexing-এর পার্থক্য: Sorting ফলাফল বা ডেটার ক্রম সাজায়; Indexing অনুসন্ধান দ্রুত করার\nসহায়ক কাঠামো তৈরি করে। Index table-এর মূল row-গুলোর ক্রম বদলে না-ও দিতে পারে।\n  CREATE INDEX idx_student_name ON Student(name);\n  SELECT * FROM Student WHERE name = 'Rima';\n  DROP INDEX idx_student_name;"
+    },
+    {
+      "chapter": 6,
+      "number": 9,
+      "slug": "lesson-6-9",
+      "title": "Data Security, Encryption ও Backup",
+      "content": "ডেটাকে অননুমোদিত দেখা, পরিবর্তন, নষ্ট বা চুরি থেকে রক্ষা করার ব্যবস্থাকে Data Security বলে। মূল লক্ষ্য\nConfidentiality (গোপনীয়তা), Integrity (অখণ্ডতা) ও Availability (প্রাপ্যতা) — CIA triad।\n\nEncryption / Decryption\n  •     Plaintext: মূল পাঠযোগ্য ডেটা।\n\n  •     Encryption: algorithm ও key ব্যবহার করে plaintext-কে ciphertext-এ রূপান্তর।\n\n  •     Ciphertext: এনক্রিপ্ট করা দুর্বোধ্য ডেটা।\n\n  •     Decryption: যথাযথ key দিয়ে ciphertext-কে আবার plaintext-এ রূপান্তর।\n\nPassword সাধারণত সরাসরি encryption নয়; salt-সহ শক্তিশালী password hashing (যেমন\nArgon2id/bcrypt/scrypt) ব্যবহার করা উচিত। Encryption ও hashing এক জিনিস নয়: encryption ফিরিয়ে\nআনা যায় key দিয়ে; hash সাধারণত একমুখী যাচাইয়ের জন্য।\n\nনিরাপত্তার নিয়ম\n  •     শক্তিশালী ও আলাদা password; administrator account সীমিত রাখা।\n  •     প্রয়োজন অনুযায়ী least privilege/access control।\n  •     নিয়মিত backup এবং restore পরীক্ষা।\n  •     সফটওয়্যার হালনাগাদ; নিরাপদ connection; sensitive data encryption।\n  •     input parameterize করা; SQL query string জোড়া দিয়ে user input না বসানো (SQL injection প্রতিরোধ)।\n\n  •     audit log ও incident response পরিকল্পনা।"
+    },
+    {
+      "chapter": 6,
+      "number": 10,
+      "slug": "lesson-6-10",
+      "title": "ডেটাবেজের ব্যবহারক্ষেত্র",
+      "content": "শিক্ষাপ্রতিষ্ঠানে শিক্ষার্থী/শিক্ষক/ফলাফল; ব্যাংকে হিসাব/লেনদেন; হাসপাতালে রোগী/চিকিৎসক/রিপোর্ট;\nকরপোরেট প্রতিষ্ঠানে কর্মী/বেতন/বিক্রয়; সরকারি প্রতিষ্ঠানে নাগরিক সেবা/নিবন্ধন/কর; ই-কমার্সে\nপণ্য/অর্ডার/গ্রাহক তথ্য ডেটাবেজেরাখা হয়।"
+    }
+  ],
+  "mcqs": [],
+  "practicals": [
+    {
+      "number": 1,
+      "title": "প্রথম ওয়েবপেজ",
+      "instructions": "১. index.html নামে ফাইল তৈরি করো। ২. HTML5 skeleton লেখো। ৩. নিজের নামের heading, পরিচিতির\nparagraph এবং একটি horizontal line দাও। ৪. Browser-এ খুলে দেখো। ৫. title ও heading-এর পার্থক্য\nলিখো।"
+    },
+    {
+      "number": 2,
+      "title": "লিংক ও নেভিগেশন",
+      "instructions": "index.html, about.html ও contact.html তৈরি করো। তিনটি পেজে একই navigation menu রাখো। href-এ\nসঠিক file path দাও। ভু ল path দিলে কী হয় পরীক্ষা করো।"
+    },
+    {
+      "number": 3,
+      "title": "ছবি ও বিকল্প লেখা",
+      "instructions": "নিজের একটি অনুমতিপ্রাপ্ত ছবি images folder-এ রাখো। img দিয়ে যুক্ত করো। অর্থবহ alt লিখো। ছবির width\nপরিবর্ত ন করো; width ও height দুইটি একসঙ্গে অযৌক্তিকভাবে দিলে ছবির অনুপাত কীভাবে নষ্ট হতে পারে তা\nপর্যবেক্ষণ করো।"
+    },
+    {
+      "number": 4,
+      "title": "তালিকা ও টেবিল",
+      "instructions": "প্রিয় পাঁচটি বই নিয়ে ordered list এবং প্রয়োজনীয় জিনিস নিয়ে unordered list তৈরি করো। এরপর ৩ শিক্ষার্থীর\nনাম, রোল ও নম্বর দিয়ে table বানাও। thead, tbody, th ও td ব্যবহার করো।"
+    },
+    {
+      "number": 5,
+      "title": "Semantic HTML ও CSS",
+      "instructions": "header, nav, main, section, article, footer দিয়ে একটি পেজ বানাও। আলাদা style.css ফাইলে font,\nbackground, spacing ও responsive layout সেট করো। ৩২০px চওড়া screen-এ horizontal scrolling হচ্ছে\nকি না দেখো।"
+    },
+    {
+      "number": 6,
+      "title": "Form ও Accessibility",
+      "instructions": "নাম, email, message ও submit button-সহ form বানাও। প্রতিটি input-এর সঙ্গে label যুক্ত করো। প্রয়োজনীয়\nfield-এ required দাও। label ছাড়া form এবং label-সহ form keyboard দিয়ে ব্যবহার করে তু লনা করো। বাস্তবে\ndata পাঠাতে server-side processing প্রয়োজন—শুধু HTML form নিজে data সংরক্ষণ করে না।\n\nC প্রোগ্রামিং ল্যাব"
+    },
+    {
+      "number": 7,
+      "title": "Input/Output ও যোগ",
+      "instructions": "দুটি integer input নিয়ে যোগফল দেখাও। এরপর subtraction, multiplication ও division যোগ করো।\nDivision-এর আগে divisor শূন্য কি না পরীক্ষা করো।"
+    },
+    {
+      "number": 8,
+      "title": "শর্ত দিয়ে বড় সংখ্যা",
+      "instructions": "তিনটি সংখ্যা input নিয়ে সবচেয়ে বড়টি বের করো। অন্তত দুইটি সংখ্যা সমান হলে কী হবে পরীক্ষা করো।"
+    },
+    {
+      "number": 9,
+      "title": "Loop ও নামতা",
+      "instructions": "একটি সংখ্যা input নিয়ে ১ থেকে ১০ পর্যন্ত নামতা দেখাও। পরে while দিয়ে একই কাজ করো।"
+    },
+    {
+      "number": 10,
+      "title": "Array ও Function",
+      "instructions": "৫টি নম্বর array-তে রাখো। function ব্যবহার করে মোট ও গড় বের করো। Function-এ parameter ও return\nvalue ব্যবহার করো।\n\nDatabase ও SQLite ল্যাব"
+    },
+    {
+      "number": 11,
+      "title": "Student Database",
+      "instructions": "Student টেবিল বানিয়ে অন্তত ৫ জন শিক্ষার্থীর তথ্য যোগ করো। SELECT, WHERE, ORDER BY, UPDATE ও\nDELETE চালাও। ভু ল record মুছতে না হয়—সেজন্য আগে একই WHERE-এর SELECT চালিয়ে যাচাই করো।"
+    },
+    {
+      "number": 12,
+      "title": "দুই টেবিলের সম্পর্ক",
+      "instructions": "Department ও Student টেবিল বানাও। Foreign Key যুক্ত করো। JOIN দিয়ে শিক্ষার্থীর নামের পাশে বিভাগের নাম\nদেখাও। একটি parent department মুছে child record থাকলে কী ঘটে—ON DELETE policy অনুযায়ী পরীক্ষা\nকরো।"
+    }
+  ],
+  "studyPlan": [
+    {
+      "day": 1,
+      "task": "Internet, WWW, webpage, website ১০টি সংজ্ঞা নিজের ভাষায় লিখো Browser, search engine, IP, domain,"
+    },
+    {
+      "day": 2,
+      "task": "DNS ৫টি পার্থক্য লেখো দিন পড়ার বিষয় কাজ/আত্মপরীক্ষা Website structure, wireframe, নিজের কলেজ সাইটের wireframe"
+    },
+    {
+      "day": 3,
+      "task": "hosting আঁকো"
+    },
+    {
+      "day": 4,
+      "task": "HTML skeleton, heading, paragraph প্রথম ওয়েবপেজ বানাও ৩ পেজের navigation ও ছবি যোগ"
+    },
+    {
+      "day": 5,
+      "task": "Link, image করো"
+    },
+    {
+      "day": 6,
+      "task": "List, table রুটিনের table ও list বানাও ছোট responsive page বানাও;"
+    },
+    {
+      "day": 7,
+      "task": "CSS, semantic HTML, form চ্যাপ্টার ৪ MCQ"
+    },
+    {
+      "day": 8,
+      "task": "Computer organization, CPU diagram এঁ কে অংশ ব্যাখ্যা করো"
+    },
+    {
+      "day": 9,
+      "task": "Programming language generation language ও translator তু লনা করো জোড়/বিজোড়ের"
+    },
+    {
+      "day": 10,
+      "task": "Algorithm, pseudocode, flowchart algorithm/flowchart"
+    },
+    {
+      "day": 11,
+      "task": "C structure, data type, variable ৫টি input-output program"
+    },
+    {
+      "day": 12,
+      "task": "Operator, if/else বড় সংখ্যা ও grade program"
+    },
+    {
+      "day": 13,
+      "task": "Loop নামতা, যোগফল, factorial"
+    },
+    {
+      "day": 14,
+      "task": "Array, function, debugging ৩টি program debug করো; MCQ"
+    },
+    {
+      "day": 15,
+      "task": "Database, DBMS, table structure Student schema তৈরি"
+    },
+    {
+      "day": 16,
+      "task": "Primary, composite, foreign key সম্পর্কে র ERD আঁকো"
+    },
+    {
+      "day": 17,
+      "task": "SQL DDL/DML/DQL CREATE/INSERT/SELECT practice"
+    },
+    {
+      "day": 18,
+      "task": "JOIN, aggregate, SQLite দুই টেবিলে JOIN চালাও"
+    },
+    {
+      "day": 19,
+      "task": "Sorting, indexing, security ১০টি সংক্ষিপ্ত উত্তর"
+    },
+    {
+      "day": 20,
+      "task": "সব অধ্যায়ের CQ সময় ধরে ৬টি সৃজনশীল অনুশীলন ভু লের তালিকা বানিয়ে দুর্বল অংশ"
+    },
+    {
+      "day": 21,
+      "task": "Full model test আবার পড়ো"
+    }
+  ]
+}
