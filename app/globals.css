@@ -1510,3 +1510,12 @@ img,video,svg,canvas{max-width:100%}
   .search-kind{min-width:64px;font-size:11px}
   .search-copy small{font-size:12px}
 }
+
+/* v57: close (cross) button on phones/touch screens, Esc label on keyboards */
+.search-close-icon{display:none}
+@media(max-width:720px),(pointer:coarse){
+  .search-esc{width:40px;height:40px;padding:0;display:grid;place-items:center;flex:none;border-radius:50%;background:#eef0f6;border:0;color:#3b4358}
+  .search-esc-text{display:none}
+  .search-close-icon{display:grid;place-items:center}
+  .search-esc:active{background:#dfe3ee}
+}

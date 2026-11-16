@@ -149,12 +149,12 @@ function SearchDialog({ onClose }: { onClose: () => void }) {
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="ভাষা, পাঠ বা বিষয় খোঁজো… (যেমন: python, লুপ, function)"
+            placeholder="খোঁজো… যেমন: python, লুপ"
             aria-label="সার্চ"
             autoComplete="off"
             spellCheck={false}
           />
-          <button type="button" className="search-esc" onClick={onClose} aria-label="বন্ধ করো">Esc</button>
+          <button type="button" className="search-esc" onClick={onClose} aria-label="বন্ধ করো"><span className="search-esc-text">Esc</span><span className="search-close-icon"><Mark name="x" size={20} /></span></button>
         </div>
         <div className="search-body">
           {failed ? (
