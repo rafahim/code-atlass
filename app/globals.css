@@ -1232,5 +1232,3 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #76
 .site-header .brand-mark{transition:transform .25s ease}
 @media(max-width:720px){.site-header .brand-name{font-size:21px}.site-header .brand{gap:9px}}
 
-.footer-mail{display:inline-flex;align-items:center;gap:8px;margin:0 0 18px;color:#c9d2e6;font-size:14px;font-weight:600}
-.footer-mail:hover{color:#fff}

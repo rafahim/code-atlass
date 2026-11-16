@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Mark } from "@/components/Mark";
-import { CONTACT_EMAIL, DEVELOPER, assetPath } from "@/lib/site";
+import { DEVELOPER } from "@/lib/site";
 
 const learnLinks = [
   { href: "/courses/", label: "সম্পূর্ণ বাংলা কোর্স" },
@@ -52,13 +52,6 @@ export function SiteFooter() {
               <span>Code <span className="brand-accent">Atlas</span><small>শিখো • তৈরি করো • এগিয়ে যাও</small></span>
             </Link>
             <p>বাংলায় Programming শেখার সহজ ঠিকানা। একদম শুরু থেকে নিজের project তৈরি করা পর্যন্ত — সবকিছু এক জায়গায়, কোনো account ছাড়াই।</p>
-            <a className="footer-mail" href={`mailto:${CONTACT_EMAIL}`}><Mark name="mail" size={15} /> {CONTACT_EMAIL}</a>
-            <Link href="/developer/" className="footer-dev-card">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={assetPath(DEVELOPER.image)} alt="" width={44} height={44} loading="lazy" decoding="async" />
-              <span><small>তৈরি করেছেন</small><strong>{DEVELOPER.name}</strong></span>
-              <Mark name="arrow" size={16} />
-            </Link>
           </div>
 
           <nav className="footer-column" aria-label="শেখা শুরু করো">
